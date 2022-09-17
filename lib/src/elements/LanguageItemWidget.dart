@@ -114,7 +114,7 @@ class _LanguageItemWidgetState extends State<LanguageItemWidget>
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.all(Radius.circular(40)),
                     color: Theme.of(context)
-                        .accentColor
+                        .colorScheme.secondary
                         .withOpacity(opacityAnimation.value),
                   ),
                   child: Transform.rotate(

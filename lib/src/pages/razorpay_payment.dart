@@ -62,7 +62,7 @@ class _RazorPayPaymentWidgetState extends StateMVC<RazorPayPaymentWidget> {
               ? SizedBox(
                   height: 3,
                   child: LinearProgressIndicator(
-                    backgroundColor: Theme.of(context).accentColor.withOpacity(0.2),
+                    backgroundColor: Theme.of(context).colorScheme.secondary.withOpacity(0.2),
                   ),
                 )
               : SizedBox(),

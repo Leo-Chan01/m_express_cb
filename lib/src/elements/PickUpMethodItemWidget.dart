@@ -20,8 +20,8 @@ class _PickUpMethodItemState extends State<PickUpMethodItem> {
   @override
   Widget build(BuildContext context) {
     return InkWell(
-      splashColor: Theme.of(context).accentColor,
-      focusColor: Theme.of(context).accentColor,
+      splashColor: Theme.of(context).colorScheme.secondary,
+      focusColor: Theme.of(context).colorScheme.secondary,
       highlightColor: Theme.of(context).primaryColor,
       onTap: () {
         this.widget.onPressed(widget.paymentMethod);
@@ -58,7 +58,7 @@ class _PickUpMethodItemState extends State<PickUpMethodItem> {
                   width: widget.paymentMethod.selected ? 60 : 0,
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.all(Radius.circular(8)),
-                    color: Theme.of(context).accentColor.withOpacity(
+                    color: Theme.of(context).colorScheme.secondary.withOpacity(
                         this.widget.paymentMethod.selected ? 0.74 : 0),
                   ),
                   child: Icon(

@@ -62,7 +62,7 @@ class _MenuWidgetState extends StateMVC<MenuWidget> {
           style: Theme.of(context).textTheme.headline6.merge(TextStyle(letterSpacing: 0)),
         ),
         actions: <Widget>[
-          new ShoppingCartButtonWidget(iconColor: Theme.of(context).hintColor, labelColor: Theme.of(context).accentColor),
+          new ShoppingCartButtonWidget(iconColor: Theme.of(context).hintColor, labelColor: Theme.of(context).colorScheme.secondary),
         ],
       ),
       floatingActionButtonLocation: FloatingActionButtonLocation.endFloat,
@@ -133,7 +133,7 @@ class _MenuWidgetState extends StateMVC<MenuWidget> {
                                 : Theme.of(context).textTheme.bodyText2,
                             padding: EdgeInsets.symmetric(horizontal: 12, vertical: 15),
                             backgroundColor: Theme.of(context).focusColor.withOpacity(0.1),
-                            selectedColor: Theme.of(context).accentColor,
+                            selectedColor: Theme.of(context).colorScheme.secondary,
                             selected: _selected,
                             //shape: StadiumBorder(side: BorderSide(color: Theme.of(context).focusColor.withOpacity(0.05))),
                             showCheckmark: false,
@@ -142,7 +142,7 @@ class _MenuWidgetState extends StateMVC<MenuWidget> {
                                 : (_category.image.url.toLowerCase().endsWith('.svg')
                                     ? SvgPicture.network(
                                         _category.image.url,
-                                        color: _selected ? Theme.of(context).primaryColor : Theme.of(context).accentColor,
+                                        color: _selected ? Theme.of(context).primaryColor : Theme.of(context).colorScheme.secondary,
                                       )
                                     : CachedNetworkImage(
                                         fit: BoxFit.cover,

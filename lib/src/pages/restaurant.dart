@@ -1,6 +1,5 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/rendering.dart';
 import 'package:mvc_pattern/mvc_pattern.dart';
 import 'package:url_launcher/url_launcher.dart';
 
@@ -62,7 +61,7 @@ class _RestaurantWidgetState extends StateMVC<RestaurantWidget> {
                       shrinkWrap: false,
                       slivers: <Widget>[
                         SliverAppBar(
-                          backgroundColor: Theme.of(context).accentColor.withOpacity(0.9),
+                          backgroundColor: Theme.of(context).colorScheme.secondary.withOpacity(0.9),
                           expandedHeight: 300,
                           elevation: 0,
 //                          iconTheme: IconThemeData(color: Theme.of(context).primaryColor),
@@ -120,7 +119,7 @@ class _RestaurantWidgetState extends StateMVC<RestaurantWidget> {
                                             ),
                                           ],
                                         ),
-                                        backgroundColor: Theme.of(context).accentColor.withOpacity(0.9),
+                                        backgroundColor: Theme.of(context).colorScheme.secondary.withOpacity(0.9),
                                         shape: StadiumBorder(),
                                       ),
                                     ),
@@ -226,7 +225,7 @@ class _RestaurantWidgetState extends StateMVC<RestaurantWidget> {
                                           color: Theme.of(context).primaryColor,
                                           size: 24,
                                         ),
-                                        color: Theme.of(context).accentColor.withOpacity(0.9),
+                                        color: Theme.of(context).colorScheme.secondary.withOpacity(0.9),
                                         shape: StadiumBorder(),
                                       ),
                                     ),
@@ -265,7 +264,7 @@ class _RestaurantWidgetState extends StateMVC<RestaurantWidget> {
                                           color: Theme.of(context).primaryColor,
                                           size: 24,
                                         ),
-                                        color: Theme.of(context).accentColor.withOpacity(0.9),
+                                        color: Theme.of(context).colorScheme.secondary.withOpacity(0.9),
                                         shape: StadiumBorder(),
                                       ),
                                     ),
@@ -303,7 +302,7 @@ class _RestaurantWidgetState extends StateMVC<RestaurantWidget> {
                                           color: Theme.of(context).primaryColor,
                                           size: 24,
                                         ),
-                                        color: Theme.of(context).accentColor.withOpacity(0.9),
+                                        color: Theme.of(context).colorScheme.secondary.withOpacity(0.9),
                                         shape: StadiumBorder(),
                                       ),
                                     ),

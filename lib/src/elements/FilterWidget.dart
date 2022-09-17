@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:mvc_pattern/mvc_pattern.dart';
 
 import '../../generated/l10n.dart';
@@ -145,7 +144,7 @@ class _FilterWidgetState extends StateMVC<FilterWidget> {
                 });
               },
               padding: EdgeInsets.symmetric(horizontal: 30, vertical: 10),
-              color: Theme.of(context).accentColor,
+              color: Theme.of(context).colorScheme.secondary,
               shape: StadiumBorder(),
               child: Text(
                 S.of(context).apply_filters,

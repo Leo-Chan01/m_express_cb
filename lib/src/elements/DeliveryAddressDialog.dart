@@ -97,7 +97,7 @@ class DeliveryAddressDialog {
                     onPressed: _submit,
                     child: Text(
                       S.of(context).save,
-                      style: TextStyle(color: Theme.of(context).accentColor),
+                      style: TextStyle(color: Theme.of(context).colorScheme.secondary),
                     ),
                   ),
                 ],

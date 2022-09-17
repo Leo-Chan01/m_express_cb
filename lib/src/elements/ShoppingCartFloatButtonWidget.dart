@@ -43,7 +43,7 @@ class _ShoppingCartFloatButtonWidgetState
       height: 60,
       child: MaterialButton(
         padding: EdgeInsets.all(0),
-        color: Theme.of(context).accentColor,
+        color: Theme.of(context).colorScheme.secondary,
         shape: StadiumBorder(),
         onPressed: () {
           if (currentUser.value.apiToken != null) {

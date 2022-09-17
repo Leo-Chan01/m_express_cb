@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart' show DateFormat;
 import 'package:mvc_pattern/mvc_pattern.dart';
@@ -103,7 +102,7 @@ class _TrackingWidgetState extends StateMVC<TrackingWidget> with SingleTickerPro
                     style: Theme.of(context).textTheme.headline6.merge(TextStyle(letterSpacing: 1.3)),
                   ),
                   actions: <Widget>[
-                    new ShoppingCartButtonWidget(iconColor: Theme.of(context).hintColor, labelColor: Theme.of(context).accentColor),
+                    new ShoppingCartButtonWidget(iconColor: Theme.of(context).hintColor, labelColor: Theme.of(context).colorScheme.secondary),
                   ],
                   backgroundColor: Theme.of(context).scaffoldBackgroundColor,
                   elevation: 0,
@@ -111,15 +110,15 @@ class _TrackingWidgetState extends StateMVC<TrackingWidget> with SingleTickerPro
                       controller: _tabController,
                       indicatorSize: TabBarIndicatorSize.label,
                       labelPadding: EdgeInsets.symmetric(horizontal: 15),
-                      unselectedLabelColor: Theme.of(context).accentColor,
+                      unselectedLabelColor: Theme.of(context).colorScheme.secondary,
                       labelColor: Theme.of(context).primaryColor,
-                      indicator: BoxDecoration(borderRadius: BorderRadius.circular(50), color: Theme.of(context).accentColor),
+                      indicator: BoxDecoration(borderRadius: BorderRadius.circular(50), color: Theme.of(context).colorScheme.secondary),
                       tabs: [
                         Tab(
                           child: Container(
                             padding: EdgeInsets.symmetric(horizontal: 5),
                             decoration: BoxDecoration(
-                                borderRadius: BorderRadius.circular(50), border: Border.all(color: Theme.of(context).accentColor.withOpacity(0.2), width: 1)),
+                                borderRadius: BorderRadius.circular(50), border: Border.all(color: Theme.of(context).colorScheme.secondary.withOpacity(0.2), width: 1)),
                             child: Align(
                               alignment: Alignment.center,
                               child: Text(S.of(context).details),
@@ -130,7 +129,7 @@ class _TrackingWidgetState extends StateMVC<TrackingWidget> with SingleTickerPro
                           child: Container(
                             padding: EdgeInsets.symmetric(horizontal: 5),
                             decoration: BoxDecoration(
-                                borderRadius: BorderRadius.circular(50), border: Border.all(color: Theme.of(context).accentColor.withOpacity(0.2), width: 1)),
+                                borderRadius: BorderRadius.circular(50), border: Border.all(color: Theme.of(context).colorScheme.secondary.withOpacity(0.2), width: 1)),
                             child: Align(
                               alignment: Alignment.center,
                               child: Text(S.of(context).tracking_order),
@@ -318,7 +317,7 @@ class _TrackingWidgetState extends StateMVC<TrackingWidget> with SingleTickerPro
                               width: 160,
                               decoration: BoxDecoration(
                                   borderRadius: BorderRadius.all(Radius.circular(100)),
-                                  color: _con.order.active ? Theme.of(context).accentColor : Colors.redAccent),
+                                  color: _con.order.active ? Theme.of(context).colorScheme.secondary : Colors.redAccent),
                               alignment: AlignmentDirectional.center,
                               child: Text(
                                 _con.order.active ? '${_con.order.orderStatus.status}' : S.of(context).canceled,
@@ -340,7 +339,7 @@ class _TrackingWidgetState extends StateMVC<TrackingWidget> with SingleTickerPro
                             padding: const EdgeInsets.all(12),
                             child: Theme(
                               data: ThemeData(
-                                primaryColor: Theme.of(context).accentColor,
+                                primaryColor: Theme.of(context).colorScheme.secondary,
                               ),
                               child: Stepper(
                                 physics: ClampingScrollPhysics(),

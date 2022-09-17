@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:mvc_pattern/mvc_pattern.dart';
 
@@ -132,7 +131,7 @@ class _CartWidgetState extends StateMVC<CartWidget> {
                         onSubmitted: (String value) {
                           _con.doApplyCoupon(value);
                         },
-                        cursorColor: Theme.of(context).accentColor,
+                        cursorColor: Theme.of(context).colorScheme.secondary,
                         controller: TextEditingController()..text = coupon?.code ?? '',
                         decoration: InputDecoration(
                           contentPadding: EdgeInsets.symmetric(horizontal: 20, vertical: 15),

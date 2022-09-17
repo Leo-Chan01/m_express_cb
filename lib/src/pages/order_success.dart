@@ -202,7 +202,7 @@ class _OrderSuccessWidgetState extends StateMVC<OrderSuccessWidget> {
                                   Navigator.of(context).pushNamed('/Pages', arguments: 3);
                                 },
                                 padding: EdgeInsets.symmetric(vertical: 14),
-                                color: Theme.of(context).accentColor,
+                                color: Theme.of(context).colorScheme.secondary,
                                 shape: StadiumBorder(),
                                 child: Text(
                                   S.of(context).my_orders,

@@ -113,7 +113,7 @@ class _DetailsWidgetState extends StateMVC<DetailsWidget> {
                 icon: Icon(
                   Icons.store,
                   size: widget.currentTab == 0 ? 28 : 24,
-                  color: widget.currentTab == 0 ? Theme.of(context).accentColor : Theme.of(context).focusColor,
+                  color: widget.currentTab == 0 ? Theme.of(context).colorScheme.secondary : Theme.of(context).focusColor,
                 ),
                 onPressed: () {
                   this._selectTab(0);
@@ -123,7 +123,7 @@ class _DetailsWidgetState extends StateMVC<DetailsWidget> {
                 icon: Icon(
                   Icons.chat,
                   size: widget.currentTab == 1 ? 28 : 24,
-                  color: widget.currentTab == 1 ? Theme.of(context).accentColor : Theme.of(context).focusColor,
+                  color: widget.currentTab == 1 ? Theme.of(context).colorScheme.secondary : Theme.of(context).focusColor,
                 ),
                 onPressed: () {
                   this._selectTab(1);
@@ -133,7 +133,7 @@ class _DetailsWidgetState extends StateMVC<DetailsWidget> {
                 icon: Icon(
                   Icons.directions,
                   size: widget.currentTab == 2 ? 28 : 24,
-                  color: widget.currentTab == 2 ? Theme.of(context).accentColor : Theme.of(context).focusColor,
+                  color: widget.currentTab == 2 ? Theme.of(context).colorScheme.secondary : Theme.of(context).focusColor,
                 ),
                 onPressed: () {
                   this._selectTab(2);
@@ -148,7 +148,7 @@ class _DetailsWidgetState extends StateMVC<DetailsWidget> {
                 },
                 padding: EdgeInsets.symmetric(horizontal: 20, vertical: 10),
                 shape: StadiumBorder(),
-                color: Theme.of(context).accentColor,
+                color: Theme.of(context).colorScheme.secondary,
                 child: Wrap(
                   spacing: 10,
                   children: [

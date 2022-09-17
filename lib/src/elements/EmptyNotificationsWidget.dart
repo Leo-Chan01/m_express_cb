@@ -39,7 +39,7 @@ class _EmptyNotificationsWidgetState extends State<EmptyNotificationsWidget> {
                 height: 3,
                 child: LinearProgressIndicator(
                   backgroundColor:
-                      Theme.of(context).accentColor.withOpacity(0.2),
+                      Theme.of(context).colorScheme.secondary.withOpacity(0.2),
                 ),
               )
             : SizedBox(),
@@ -124,7 +124,7 @@ class _EmptyNotificationsWidgetState extends State<EmptyNotificationsWidget> {
                       },
                       padding:
                           EdgeInsets.symmetric(vertical: 12, horizontal: 30),
-                      color: Theme.of(context).accentColor.withOpacity(1),
+                      color: Theme.of(context).colorScheme.secondary.withOpacity(1),
                       shape: StadiumBorder(),
                       child: Text(
                         S.of(context).start_exploring,

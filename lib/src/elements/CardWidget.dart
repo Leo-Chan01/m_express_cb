@@ -153,7 +153,7 @@ class CardWidget extends StatelessWidget {
                         },
                         child: Icon(Icons.directions,
                             color: Theme.of(context).primaryColor),
-                        color: Theme.of(context).accentColor,
+                        color: Theme.of(context).colorScheme.secondary,
                         shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(5)),
                       ),

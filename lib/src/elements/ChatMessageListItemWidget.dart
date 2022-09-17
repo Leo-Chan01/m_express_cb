@@ -79,7 +79,7 @@ class ChatMessageListItem extends StatelessWidget {
       alignment: Alignment.centerLeft,
       child: Container(
         decoration: BoxDecoration(
-            color: Theme.of(context).accentColor,
+            color: Theme.of(context).colorScheme.secondary,
             borderRadius: BorderRadius.only(
                 topRight: Radius.circular(15),
                 bottomLeft: Radius.circular(15),

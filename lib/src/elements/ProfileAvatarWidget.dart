@@ -16,7 +16,7 @@ class ProfileAvatarWidget extends StatelessWidget {
     return Container(
       padding: EdgeInsets.symmetric(vertical: 30),
       decoration: BoxDecoration(
-        color: Theme.of(context).accentColor,
+        color: Theme.of(context).colorScheme.secondary,
         borderRadius: BorderRadius.only(
             bottomLeft: Radius.circular(30), bottomRight: Radius.circular(30)),
       ),

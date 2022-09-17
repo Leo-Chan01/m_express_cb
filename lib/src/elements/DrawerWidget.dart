@@ -67,7 +67,7 @@ class _DrawerWidgetState extends StateMVC<DrawerWidget> {
                           child: currentUser.value.verifiedPhone ?? false
                               ? Icon(
                                   Icons.check_circle,
-                                  color: Theme.of(context).accentColor,
+                                  color: Theme.of(context).colorScheme.secondary,
                                   size: 24,
                                 )
                               : SizedBox(),
@@ -85,7 +85,7 @@ class _DrawerWidgetState extends StateMVC<DrawerWidget> {
                         Icon(
                           Icons.person,
                           size: 32,
-                          color: Theme.of(context).accentColor.withOpacity(1),
+                          color: Theme.of(context).colorScheme.secondary.withOpacity(1),
                         ),
                         SizedBox(width: 30),
                         Text(

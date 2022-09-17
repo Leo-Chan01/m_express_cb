@@ -30,11 +30,11 @@ class NotificationItemWidget extends StatelessWidget {
             icon: notification.read
                 ? new Icon(
                     Icons.panorama_fish_eye,
-                    color: Theme.of(context).accentColor,
+                    color: Theme.of(context).colorScheme.secondary,
                   )
                 : new Icon(
                     Icons.brightness_1,
-                    color: Theme.of(context).accentColor,
+                    color: Theme.of(context).colorScheme.secondary,
                   ),
             onPress: () {
               if (notification.read) {
@@ -48,7 +48,7 @@ class NotificationItemWidget extends StatelessWidget {
             icon: Padding(
               padding: const EdgeInsets.only(right: 10),
               child:
-                  new Icon(Icons.delete, color: Theme.of(context).accentColor),
+                  new Icon(Icons.delete, color: Theme.of(context).colorScheme.secondary),
             ),
             onPress: () {
               onRemoved();

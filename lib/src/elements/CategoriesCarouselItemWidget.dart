@@ -16,7 +16,7 @@ class CategoriesCarouselItemWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return InkWell(
-      splashColor: Theme.of(context).accentColor.withOpacity(0.08),
+      splashColor: Theme.of(context).colorScheme.secondary.withOpacity(0.08),
       highlightColor: Colors.transparent,
       onTap: () {
         Navigator.of(context)
@@ -46,7 +46,7 @@ class CategoriesCarouselItemWidget extends StatelessWidget {
                 child: category.image.url.toLowerCase().endsWith('.svg')
                     ? SvgPicture.network(
                         category.image.url,
-                        color: Theme.of(context).accentColor,
+                        color: Theme.of(context).colorScheme.secondary,
                       )
                     : CachedNetworkImage(
                         fit: BoxFit.cover,

@@ -123,7 +123,7 @@ class _ProfileSettingsDialogState extends State<ProfileSettingsDialog> {
                         child: Text(
                           S.of(context).save,
                           style:
-                              TextStyle(color: Theme.of(context).accentColor),
+                              TextStyle(color: Theme.of(context).colorScheme.secondary),
                         ),
                       ),
                     ],

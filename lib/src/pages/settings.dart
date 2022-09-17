@@ -155,7 +155,7 @@ class _SettingsWidgetState extends StateMVC<SettingsWidget> {
                                 if (currentUser.value.verifiedPhone ?? false)
                                   Icon(
                                     Icons.check_circle_outline,
-                                    color: Theme.of(context).accentColor,
+                                    color: Theme.of(context).colorScheme.secondary,
                                     size: 22,
                                   )
                               ],

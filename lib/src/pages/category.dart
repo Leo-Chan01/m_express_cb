@@ -73,7 +73,7 @@ class _CategoryWidgetState extends StateMVC<CategoryWidget> {
                     ),
                   ),
                 )
-              : ShoppingCartButtonWidget(iconColor: Theme.of(context).hintColor, labelColor: Theme.of(context).accentColor),
+              : ShoppingCartButtonWidget(iconColor: Theme.of(context).hintColor, labelColor: Theme.of(context).colorScheme.secondary),
         ],
       ),
       body: RefreshIndicator(
@@ -117,7 +117,7 @@ class _CategoryWidgetState extends StateMVC<CategoryWidget> {
                         },
                         icon: Icon(
                           Icons.format_list_bulleted,
-                          color: this.layout == 'list' ? Theme.of(context).accentColor : Theme.of(context).focusColor,
+                          color: this.layout == 'list' ? Theme.of(context).colorScheme.secondary : Theme.of(context).focusColor,
                         ),
                       ),
                       IconButton(
@@ -128,7 +128,7 @@ class _CategoryWidgetState extends StateMVC<CategoryWidget> {
                         },
                         icon: Icon(
                           Icons.apps,
-                          color: this.layout == 'grid' ? Theme.of(context).accentColor : Theme.of(context).focusColor,
+                          color: this.layout == 'grid' ? Theme.of(context).colorScheme.secondary : Theme.of(context).focusColor,
                         ),
                       )
                     ],

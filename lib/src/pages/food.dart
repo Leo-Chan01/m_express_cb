@@ -1,5 +1,4 @@
 import 'package:cached_network_image/cached_network_image.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:mvc_pattern/mvc_pattern.dart';
 
@@ -61,7 +60,7 @@ class _FoodWidgetState extends StateMVC<FoodWidget> {
                       slivers: <Widget>[
                         SliverAppBar(
                           backgroundColor:
-                              Theme.of(context).accentColor.withOpacity(0.9),
+                              Theme.of(context).colorScheme.secondary.withOpacity(0.9),
                           expandedHeight: 300,
                           elevation: 0,
                           iconTheme: IconThemeData(
@@ -512,12 +511,12 @@ class _FoodWidgetState extends StateMVC<FoodWidget> {
                                             side: MaterialStateProperty.all(
                                                 BorderSide(
                                                     color: Theme.of(context)
-                                                        .accentColor)),
+                                                        .colorScheme.secondary)),
                                           ),
                                           child: Icon(
                                             Icons.favorite,
                                             color:
-                                                Theme.of(context).accentColor,
+                                                Theme.of(context).colorScheme.secondary,
                                           ))
                                       : MaterialButton(
                                           elevation: 0,
@@ -534,7 +533,7 @@ class _FoodWidgetState extends StateMVC<FoodWidget> {
                                           },
                                           padding: EdgeInsets.symmetric(
                                               vertical: 14),
-                                          color: Theme.of(context).accentColor,
+                                          color: Theme.of(context).colorScheme.secondary,
                                           shape: StadiumBorder(),
                                           child: Icon(
                                             Icons.favorite,
@@ -587,7 +586,7 @@ class _FoodWidgetState extends StateMVC<FoodWidget> {
                                         },
                                         padding:
                                             EdgeInsets.symmetric(vertical: 14),
-                                        color: Theme.of(context).accentColor,
+                                        color: Theme.of(context).colorScheme.secondary,
                                         shape: StadiumBorder(),
                                         child: Container(
                                           width: double.infinity,

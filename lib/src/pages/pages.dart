@@ -85,7 +85,7 @@ class _PagesWidgetState extends State<PagesWidget> {
         body: widget.currentPage,
         bottomNavigationBar: BottomNavigationBar(
           type: BottomNavigationBarType.fixed,
-          selectedItemColor: Theme.of(context).accentColor,
+          selectedItemColor: Theme.of(context).colorScheme.secondary,
           selectedFontSize: 0,
           unselectedFontSize: 0,
           iconSize: 22,
@@ -113,13 +113,13 @@ class _PagesWidgetState extends State<PagesWidget> {
                   width: 42,
                   height: 42,
                   decoration: BoxDecoration(
-                    color: Theme.of(context).accentColor,
+                    color: Theme.of(context).colorScheme.secondary,
                     borderRadius: BorderRadius.all(
                       Radius.circular(50),
                     ),
                     boxShadow: [
-                      BoxShadow(color: Theme.of(context).accentColor.withOpacity(0.4), blurRadius: 40, offset: Offset(0, 15)),
-                      BoxShadow(color: Theme.of(context).accentColor.withOpacity(0.4), blurRadius: 13, offset: Offset(0, 3))
+                      BoxShadow(color: Theme.of(context).colorScheme.secondary.withOpacity(0.4), blurRadius: 40, offset: Offset(0, 15)),
+                      BoxShadow(color: Theme.of(context).colorScheme.secondary.withOpacity(0.4), blurRadius: 13, offset: Offset(0, 3))
                     ],
                   ),
                   child: new Icon(Icons.home, color: Theme.of(context).primaryColor),

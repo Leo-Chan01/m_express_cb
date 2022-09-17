@@ -19,7 +19,7 @@ class GalleryItemWidget extends StatelessWidget {
             decoration: BoxDecoration(
               boxShadow: [
                 BoxShadow(
-                    color: Theme.of(context).accentColor.withOpacity(0.1),
+                    color: Theme.of(context).colorScheme.secondary.withOpacity(0.1),
                     blurRadius: 15,
                     offset: Offset(0, 5)),
               ],

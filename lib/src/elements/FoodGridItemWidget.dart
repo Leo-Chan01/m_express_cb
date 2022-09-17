@@ -20,7 +20,7 @@ class _FoodGridItemWidgetState extends State<FoodGridItemWidget> {
   Widget build(BuildContext context) {
     return InkWell(
       highlightColor: Colors.transparent,
-      splashColor: Theme.of(context).accentColor.withOpacity(0.08),
+      splashColor: Theme.of(context).colorScheme.secondary.withOpacity(0.08),
       onTap: () {
         Navigator.of(context).pushNamed('/Food',
             arguments: new RouteArgument(
@@ -76,7 +76,7 @@ class _FoodGridItemWidgetState extends State<FoodGridItemWidget> {
                 color: Theme.of(context).primaryColor,
                 size: 24,
               ),
-              color: Theme.of(context).accentColor.withOpacity(0.9),
+              color: Theme.of(context).colorScheme.secondary.withOpacity(0.9),
               shape: StadiumBorder(),
             ),
           ),

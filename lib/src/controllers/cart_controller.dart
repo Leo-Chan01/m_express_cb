@@ -144,7 +144,7 @@ class CartController extends ControllerMVC {
         content: Text(S.of(context).completeYourProfileDetailsToContinue),
         action: SnackBarAction(
           label: S.of(context).settings,
-          textColor: Theme.of(context).accentColor,
+          textColor: Theme.of(context).colorScheme.secondary,
           onPressed: () {
             Navigator.of(context).pushNamed('/Settings');
           },

@@ -37,7 +37,7 @@ class _ProfileWidgetState extends StateMVC<ProfileWidget> {
           onPressed: () => _con.scaffoldKey?.currentState?.openDrawer(),
         ),
         automaticallyImplyLeading: false,
-        backgroundColor: Theme.of(context).accentColor,
+        backgroundColor: Theme.of(context).colorScheme.secondary,
         elevation: 0,
         centerTitle: true,
         title: Text(

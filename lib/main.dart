@@ -58,7 +58,6 @@ class _MyAppState extends State<MyApp> {
                       primaryColor: Colors.white,
                       floatingActionButtonTheme: FloatingActionButtonThemeData(elevation: 0, foregroundColor: Colors.white),
                       brightness: Brightness.light,
-                      accentColor: config.Colors().mainColor(1),
                       dividerColor: config.Colors().accentColor(0.1),
                       focusColor: config.Colors().accentColor(1),
                       hintColor: config.Colors().secondColor(1),
@@ -73,14 +72,13 @@ class _MyAppState extends State<MyApp> {
                         bodyText2: TextStyle(fontSize: 12.0, color: config.Colors().secondColor(1), height: 1.35),
                         bodyText1: TextStyle(fontSize: 14.0, color: config.Colors().secondColor(1), height: 1.35),
                         caption: TextStyle(fontSize: 12.0, color: config.Colors().accentColor(1), height: 1.35),
-                      ),
+                      ), colorScheme: ColorScheme.fromSwatch().copyWith(secondary: config.Colors().mainColor(1)),
                     )
                   : ThemeData(
                       fontFamily: 'Poppins',
                       primaryColor: Color(0xFF252525),
                       brightness: Brightness.dark,
                       scaffoldBackgroundColor: Color(0xFF2C2C2C),
-                      accentColor: config.Colors().mainDarkColor(1),
                       dividerColor: config.Colors().accentColor(0.1),
                       hintColor: config.Colors().secondDarkColor(1),
                       focusColor: config.Colors().accentDarkColor(1),
@@ -95,7 +93,7 @@ class _MyAppState extends State<MyApp> {
                         bodyText2: TextStyle(fontSize: 12.0, color: config.Colors().secondDarkColor(1), height: 1.35),
                         bodyText1: TextStyle(fontSize: 14.0, color: config.Colors().secondDarkColor(1), height: 1.35),
                         caption: TextStyle(fontSize: 12.0, color: config.Colors().secondDarkColor(0.6), height: 1.35),
-                      ),
+                      ), colorScheme: ColorScheme.fromSwatch().copyWith(secondary: config.Colors().mainDarkColor(1)),
                     ));
         });
   }

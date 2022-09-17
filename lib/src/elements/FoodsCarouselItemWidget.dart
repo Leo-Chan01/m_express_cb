@@ -16,7 +16,7 @@ class FoodsCarouselItemWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return InkWell(
-      splashColor: Theme.of(context).accentColor.withOpacity(0.08),
+      splashColor: Theme.of(context).colorScheme.secondary.withOpacity(0.08),
       highlightColor: Colors.transparent,
       onTap: () {
         Navigator.of(context).pushNamed('/Food',
@@ -56,7 +56,7 @@ class FoodsCarouselItemWidget extends StatelessWidget {
                   borderRadius: BorderRadius.all(Radius.circular(100)),
                   color: food.discountPrice > 0
                       ? Colors.red
-                      : Theme.of(context).accentColor,
+                      : Theme.of(context).colorScheme.secondary,
                 ),
                 alignment: AlignmentDirectional.topEnd,
                 child: Helper.getPrice(

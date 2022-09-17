@@ -93,7 +93,7 @@ class _MobileVerification2State extends State<MobileVerification2> {
                   });
                 }
               },
-              color: Theme.of(context).accentColor,
+              color: Theme.of(context).colorScheme.secondary,
               text: Text(S.of(context).verify.toUpperCase(), style: Theme.of(context).textTheme.headline6.merge(TextStyle(color: Theme.of(context).primaryColor))),
             ),
           ],

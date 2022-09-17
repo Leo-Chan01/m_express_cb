@@ -25,7 +25,7 @@ class _ImageThumbCarouselWidgetState extends State<ImageThumbCarouselWidget> {
               itemCount: widget.galleriesList.length,
               itemBuilder: (context, index) {
                 return InkWell(
-                  splashColor: Theme.of(context).accentColor.withOpacity(0.8),
+                  splashColor: Theme.of(context).colorScheme.secondary.withOpacity(0.8),
                   highlightColor: Colors.transparent,
                   onTap: () {},
                   child: GalleryItemWidget(

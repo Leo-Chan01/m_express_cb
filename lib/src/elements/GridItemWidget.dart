@@ -15,7 +15,7 @@ class GridItemWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return InkWell(
       highlightColor: Colors.transparent,
-      splashColor: Theme.of(context).accentColor.withOpacity(0.08),
+      splashColor: Theme.of(context).colorScheme.secondary.withOpacity(0.08),
       onTap: () {
         Navigator.of(context).pushNamed('/Details',
             arguments:

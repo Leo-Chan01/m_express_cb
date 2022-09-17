@@ -39,7 +39,7 @@ class _ForgetPasswordWidgetState extends StateMVC<ForgetPasswordWidget> {
               child: Container(
                 width: config.App(context).appWidth(100),
                 height: config.App(context).appHeight(37),
-                decoration: BoxDecoration(color: Theme.of(context).accentColor),
+                decoration: BoxDecoration(color: Theme.of(context).colorScheme.secondary),
               ),
             ),
             Positioned(
@@ -80,11 +80,11 @@ class _ForgetPasswordWidgetState extends StateMVC<ForgetPasswordWidget> {
                         validator: (input) => !input.contains('@') ? S.of(context).should_be_a_valid_email : null,
                         decoration: InputDecoration(
                           labelText: S.of(context).email,
-                          labelStyle: TextStyle(color: Theme.of(context).accentColor),
+                          labelStyle: TextStyle(color: Theme.of(context).colorScheme.secondary),
                           contentPadding: EdgeInsets.all(12),
                           hintText: 'johndoe@gmail.com',
                           hintStyle: TextStyle(color: Theme.of(context).focusColor.withOpacity(0.7)),
-                          prefixIcon: Icon(Icons.alternate_email, color: Theme.of(context).accentColor),
+                          prefixIcon: Icon(Icons.alternate_email, color: Theme.of(context).colorScheme.secondary),
                           border: OutlineInputBorder(borderSide: BorderSide(color: Theme.of(context).focusColor.withOpacity(0.2))),
                           focusedBorder: OutlineInputBorder(borderSide: BorderSide(color: Theme.of(context).focusColor.withOpacity(0.5))),
                           enabledBorder: OutlineInputBorder(borderSide: BorderSide(color: Theme.of(context).focusColor.withOpacity(0.2))),
@@ -96,7 +96,7 @@ class _ForgetPasswordWidgetState extends StateMVC<ForgetPasswordWidget> {
                           S.of(context).send_password_reset_link,
                           style: TextStyle(color: Theme.of(context).primaryColor),
                         ),
-                        color: Theme.of(context).accentColor,
+                        color: Theme.of(context).colorScheme.secondary,
                         onPressed: () {
                           _con.resetPassword();
                         },

@@ -1,6 +1,5 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/rendering.dart';
 import 'package:mvc_pattern/mvc_pattern.dart';
 
 import '../../generated/l10n.dart';
@@ -98,7 +97,7 @@ class _ReviewsWidgetState extends StateMVC<ReviewsWidget> {
                                       ],
                                     ),
                                     backgroundColor: Theme.of(context)
-                                        .accentColor
+                                        .colorScheme.secondary
                                         .withOpacity(0.9),
                                     shape: StadiumBorder(),
                                   ),

@@ -114,7 +114,7 @@ class _PaymentSettingsDialogState extends State<PaymentSettingsDialog> {
                         child: Text(
                           S.of(context).save,
                           style:
-                              TextStyle(color: Theme.of(context).accentColor),
+                              TextStyle(color: Theme.of(context).colorScheme.secondary),
                         ),
                       ),
                     ],

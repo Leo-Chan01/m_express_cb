@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:google_map_location_picker/google_map_location_picker.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 import 'package:mvc_pattern/mvc_pattern.dart';
@@ -134,7 +133,7 @@ class _DeliveryAddressBottomSheetWidgetState
                         width: 36,
                         decoration: BoxDecoration(
                             borderRadius: BorderRadius.all(Radius.circular(5)),
-                            color: Theme.of(context).accentColor),
+                            color: Theme.of(context).colorScheme.secondary),
                         child: Icon(
                           Icons.my_location,
                           color: Theme.of(context).primaryColor,

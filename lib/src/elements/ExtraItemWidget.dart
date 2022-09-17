@@ -95,7 +95,7 @@ class _ExtraItemWidgetState extends State<ExtraItemWidget>
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.all(Radius.circular(60)),
                   color: Theme.of(context)
-                      .accentColor
+                      .colorScheme.secondary
                       .withOpacity(opacityAnimation.value),
                 ),
                 child: Transform.rotate(

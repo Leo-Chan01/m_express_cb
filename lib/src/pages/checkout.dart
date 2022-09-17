@@ -215,7 +215,7 @@ class _CheckoutWidgetState extends StateMVC<CheckoutWidget> {
                                 }
                               },
                               padding: EdgeInsets.symmetric(vertical: 14),
-                              color: Theme.of(context).accentColor,
+                              color: Theme.of(context).colorScheme.secondary,
                               shape: StadiumBorder(),
                               child: Text(
                                 S.of(context).confirm_payment,

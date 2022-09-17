@@ -74,7 +74,7 @@ class _SearchResultWidgetState extends StateMVC<SearchResultWidget> {
                     .caption
                     .merge(TextStyle(fontSize: 14)),
                 prefixIcon:
-                    Icon(Icons.search, color: Theme.of(context).accentColor),
+                    Icon(Icons.search, color: Theme.of(context).colorScheme.secondary),
                 border: OutlineInputBorder(
                     borderSide: BorderSide(
                         color: Theme.of(context).focusColor.withOpacity(0.1))),

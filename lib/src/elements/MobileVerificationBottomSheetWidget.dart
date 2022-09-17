@@ -1,6 +1,5 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 
 import '../../generated/l10n.dart';
 import '../helpers/app_config.dart' as config;
@@ -130,7 +129,7 @@ class _MobileVerificationBottomSheetWidgetState extends State<MobileVerification
                       print(e.toString());
                     });
                   },
-                  color: Theme.of(context).accentColor,
+                  color: Theme.of(context).colorScheme.secondary,
                   text: Text(S.of(context).verify.toUpperCase(),
                       style: Theme.of(context).textTheme.headline6.merge(TextStyle(color: Theme.of(context).primaryColor))),
                 ),

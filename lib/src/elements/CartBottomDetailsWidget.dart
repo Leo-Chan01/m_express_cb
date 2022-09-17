@@ -98,7 +98,7 @@ class CartBottomDetailsWidget extends StatelessWidget {
                               Theme.of(context).focusColor.withOpacity(0.5),
                           padding: EdgeInsets.symmetric(vertical: 14),
                           color: !_con.carts[0].food.restaurant.closed
-                              ? Theme.of(context).accentColor
+                              ? Theme.of(context).colorScheme.secondary
                               : Theme.of(context).focusColor.withOpacity(0.5),
                           shape: StadiumBorder(),
                           child: Text(

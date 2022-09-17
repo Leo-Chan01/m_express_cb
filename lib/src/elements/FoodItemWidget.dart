@@ -14,8 +14,8 @@ class FoodItemWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return InkWell(
-      splashColor: Theme.of(context).accentColor,
-      focusColor: Theme.of(context).accentColor,
+      splashColor: Theme.of(context).colorScheme.secondary,
+      focusColor: Theme.of(context).colorScheme.secondary,
       highlightColor: Theme.of(context).primaryColor,
       onTap: () {
         Navigator.of(context).pushNamed('/Food',

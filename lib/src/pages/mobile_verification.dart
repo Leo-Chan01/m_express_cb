@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 import '../../generated/l10n.dart';
@@ -85,7 +84,7 @@ class MobileVerification extends StatelessWidget {
               onPressed: () {
                 Navigator.of(context).pushNamed('/MobileVerification2');
               },
-              color: Theme.of(context).accentColor,
+              color: Theme.of(context).colorScheme.secondary,
               text: Text(S.of(context).submit.toUpperCase(),
                   style: Theme.of(context).textTheme.headline6.merge(TextStyle(color: Theme.of(context).primaryColor))),
             ),

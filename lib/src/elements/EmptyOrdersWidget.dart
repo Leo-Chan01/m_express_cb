@@ -38,7 +38,7 @@ class _EmptyOrdersWidgetState extends State<EmptyOrdersWidget> {
                 height: 3,
                 child: LinearProgressIndicator(
                   backgroundColor:
-                      Theme.of(context).accentColor.withOpacity(0.2),
+                      Theme.of(context).colorScheme.secondary.withOpacity(0.2),
                 ),
               )
             : SizedBox(),

@@ -39,8 +39,8 @@ class DeliveryAddressesItemWidget extends StatelessWidget {
 
   InkWell buildItem(BuildContext context) {
     return InkWell(
-      splashColor: Theme.of(context).accentColor,
-      focusColor: Theme.of(context).accentColor,
+      splashColor: Theme.of(context).colorScheme.secondary,
+      focusColor: Theme.of(context).colorScheme.secondary,
       highlightColor: Theme.of(context).primaryColor,
       onTap: () {
         this.onPressed(address);
@@ -72,7 +72,7 @@ class DeliveryAddressesItemWidget extends StatelessWidget {
                       borderRadius: BorderRadius.all(Radius.circular(8)),
                       color: (address?.isDefault ?? false) ||
                               (paymentMethod?.selected ?? false)
-                          ? Theme.of(context).accentColor
+                          ? Theme.of(context).colorScheme.secondary
                           : Theme.of(context).focusColor),
                   child: Icon(
                     (paymentMethod?.selected ?? false)

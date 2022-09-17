@@ -36,7 +36,7 @@ class _SignUpWidgetState extends StateMVC<SignUpWidget> {
               child: Container(
                 width: config.App(context).appWidth(100),
                 height: config.App(context).appHeight(29.5),
-                decoration: BoxDecoration(color: Theme.of(context).accentColor),
+                decoration: BoxDecoration(color: Theme.of(context).colorScheme.secondary),
               ),
             ),
             Positioned(
@@ -77,11 +77,11 @@ class _SignUpWidgetState extends StateMVC<SignUpWidget> {
                         validator: (input) => input.length < 3 ? S.of(context).should_be_more_than_3_letters : null,
                         decoration: InputDecoration(
                           labelText: S.of(context).full_name,
-                          labelStyle: TextStyle(color: Theme.of(context).accentColor),
+                          labelStyle: TextStyle(color: Theme.of(context).colorScheme.secondary),
                           contentPadding: EdgeInsets.all(12),
                           hintText: S.of(context).john_doe,
                           hintStyle: TextStyle(color: Theme.of(context).focusColor.withOpacity(0.7)),
-                          prefixIcon: Icon(Icons.person_outline, color: Theme.of(context).accentColor),
+                          prefixIcon: Icon(Icons.person_outline, color: Theme.of(context).colorScheme.secondary),
                           border: OutlineInputBorder(borderSide: BorderSide(color: Theme.of(context).focusColor.withOpacity(0.2))),
                           focusedBorder: OutlineInputBorder(borderSide: BorderSide(color: Theme.of(context).focusColor.withOpacity(0.5))),
                           enabledBorder: OutlineInputBorder(borderSide: BorderSide(color: Theme.of(context).focusColor.withOpacity(0.2))),
@@ -94,11 +94,11 @@ class _SignUpWidgetState extends StateMVC<SignUpWidget> {
                         validator: (input) => !input.contains('@') ? S.of(context).should_be_a_valid_email : null,
                         decoration: InputDecoration(
                           labelText: S.of(context).email,
-                          labelStyle: TextStyle(color: Theme.of(context).accentColor),
+                          labelStyle: TextStyle(color: Theme.of(context).colorScheme.secondary),
                           contentPadding: EdgeInsets.all(12),
                           hintText: 'johndoe@gmail.com',
                           hintStyle: TextStyle(color: Theme.of(context).focusColor.withOpacity(0.7)),
-                          prefixIcon: Icon(Icons.alternate_email, color: Theme.of(context).accentColor),
+                          prefixIcon: Icon(Icons.alternate_email, color: Theme.of(context).colorScheme.secondary),
                           border: OutlineInputBorder(borderSide: BorderSide(color: Theme.of(context).focusColor.withOpacity(0.2))),
                           focusedBorder: OutlineInputBorder(borderSide: BorderSide(color: Theme.of(context).focusColor.withOpacity(0.5))),
                           enabledBorder: OutlineInputBorder(borderSide: BorderSide(color: Theme.of(context).focusColor.withOpacity(0.2))),
@@ -114,11 +114,11 @@ class _SignUpWidgetState extends StateMVC<SignUpWidget> {
                         },
                         decoration: InputDecoration(
                           labelText: S.of(context).phoneNumber,
-                          labelStyle: TextStyle(color: Theme.of(context).accentColor),
+                          labelStyle: TextStyle(color: Theme.of(context).colorScheme.secondary),
                           contentPadding: EdgeInsets.all(12),
                           hintText: '+91 1362 699765',
                           hintStyle: TextStyle(color: Theme.of(context).focusColor.withOpacity(0.7)),
-                          prefixIcon: Icon(Icons.phone_android, color: Theme.of(context).accentColor),
+                          prefixIcon: Icon(Icons.phone_android, color: Theme.of(context).colorScheme.secondary),
                           border: OutlineInputBorder(borderSide: BorderSide(color: Theme.of(context).focusColor.withOpacity(0.2))),
                           focusedBorder: OutlineInputBorder(borderSide: BorderSide(color: Theme.of(context).focusColor.withOpacity(0.5))),
                           enabledBorder: OutlineInputBorder(borderSide: BorderSide(color: Theme.of(context).focusColor.withOpacity(0.2))),
@@ -131,11 +131,11 @@ class _SignUpWidgetState extends StateMVC<SignUpWidget> {
                         validator: (input) => input.length < 6 ? S.of(context).should_be_more_than_6_letters : null,
                         decoration: InputDecoration(
                           labelText: S.of(context).password,
-                          labelStyle: TextStyle(color: Theme.of(context).accentColor),
+                          labelStyle: TextStyle(color: Theme.of(context).colorScheme.secondary),
                           contentPadding: EdgeInsets.all(12),
                           hintText: '••••••••••••',
                           hintStyle: TextStyle(color: Theme.of(context).focusColor.withOpacity(0.7)),
-                          prefixIcon: Icon(Icons.lock_outline, color: Theme.of(context).accentColor),
+                          prefixIcon: Icon(Icons.lock_outline, color: Theme.of(context).colorScheme.secondary),
                           suffixIcon: IconButton(
                             onPressed: () {
                               setState(() {
@@ -156,7 +156,7 @@ class _SignUpWidgetState extends StateMVC<SignUpWidget> {
                           S.of(context).register,
                           style: TextStyle(color: Theme.of(context).primaryColor),
                         ),
-                        color: Theme.of(context).accentColor,
+                        color: Theme.of(context).colorScheme.secondary,
                         onPressed: () {
                           if (_con.loginFormKey.currentState.validate()) {
                             _con.loginFormKey.currentState.save();

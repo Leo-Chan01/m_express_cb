@@ -43,7 +43,7 @@ class _FavoritesWidgetState extends StateMVC<FavoritesWidget> {
           style: Theme.of(context).textTheme.headline6.merge(TextStyle(letterSpacing: 1.3)),
         ),
         actions: <Widget>[
-          new ShoppingCartButtonWidget(iconColor: Theme.of(context).hintColor, labelColor: Theme.of(context).accentColor),
+          new ShoppingCartButtonWidget(iconColor: Theme.of(context).hintColor, labelColor: Theme.of(context).colorScheme.secondary),
         ],
       ),
       body: currentUser.value.apiToken == null
@@ -89,7 +89,7 @@ class _FavoritesWidgetState extends StateMVC<FavoritesWidget> {
                               },
                               icon: Icon(
                                 Icons.format_list_bulleted,
-                                color: this.layout == 'list' ? Theme.of(context).accentColor : Theme.of(context).focusColor,
+                                color: this.layout == 'list' ? Theme.of(context).colorScheme.secondary : Theme.of(context).focusColor,
                               ),
                             ),
                             IconButton(
@@ -100,7 +100,7 @@ class _FavoritesWidgetState extends StateMVC<FavoritesWidget> {
                               },
                               icon: Icon(
                                 Icons.apps,
-                                color: this.layout == 'grid' ? Theme.of(context).accentColor : Theme.of(context).focusColor,
+                                color: this.layout == 'grid' ? Theme.of(context).colorScheme.secondary : Theme.of(context).focusColor,
                               ),
                             )
                           ],
