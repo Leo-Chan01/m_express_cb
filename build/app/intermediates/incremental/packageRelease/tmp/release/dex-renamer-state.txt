@@ -1,0 +1,4 @@
+#Mon Sep 12 13:57:11 WAT 2022
+base.0=/home/ephraim/Documents/mez/flutter_application/build/app/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+renamed.0=classes.dex
+path.0=classes.dex

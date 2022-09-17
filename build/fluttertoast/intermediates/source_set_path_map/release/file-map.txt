@@ -1,0 +1,12 @@
+io.github.ponnamkarthik.toast.fluttertoast-core-1.6.0-0 /home/ephraim/.gradle/caches/transforms-3/0493d78afe84919f16efe4b679302c3a/transformed/core-1.6.0/res
+io.github.ponnamkarthik.toast.fluttertoast-jetified-window-java-1.0.0-beta04-1 /home/ephraim/.gradle/caches/transforms-3/078da900312efa2af954c0c286cc94c0/transformed/jetified-window-java-1.0.0-beta04/res
+io.github.ponnamkarthik.toast.fluttertoast-jetified-annotation-experimental-1.1.0-2 /home/ephraim/.gradle/caches/transforms-3/5524c459b8d5fed1e7bcc6e709d8212f/transformed/jetified-annotation-experimental-1.1.0/res
+io.github.ponnamkarthik.toast.fluttertoast-jetified-window-1.0.0-beta04-3 /home/ephraim/.gradle/caches/transforms-3/6ed5292ad7197e8f2f57c368bbeaecd0/transformed/jetified-window-1.0.0-beta04/res
+io.github.ponnamkarthik.toast.fluttertoast-pngs-4 /home/ephraim/Documents/mez/flutter_application/build/fluttertoast/generated/res/pngs/release
+io.github.ponnamkarthik.toast.fluttertoast-resValues-5 /home/ephraim/Documents/mez/flutter_application/build/fluttertoast/generated/res/resValues/release
+io.github.ponnamkarthik.toast.fluttertoast-rs-6 /home/ephraim/Documents/mez/flutter_application/build/fluttertoast/generated/res/rs/release
+io.github.ponnamkarthik.toast.fluttertoast-mergeReleaseResources-7 /home/ephraim/Documents/mez/flutter_application/build/fluttertoast/intermediates/incremental/release/mergeReleaseResources/merged.dir
+io.github.ponnamkarthik.toast.fluttertoast-mergeReleaseResources-8 /home/ephraim/Documents/mez/flutter_application/build/fluttertoast/intermediates/incremental/release/mergeReleaseResources/stripped.dir
+io.github.ponnamkarthik.toast.fluttertoast-merged_res-9 /home/ephraim/Documents/mez/flutter_application/build/fluttertoast/intermediates/merged_res/release
+io.github.ponnamkarthik.toast.fluttertoast-main-10 /home/ephraim/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.org/fluttertoast-8.0.8/android/src/main/res
+io.github.ponnamkarthik.toast.fluttertoast-release-11 /home/ephraim/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.org/fluttertoast-8.0.8/android/src/release/res

@@ -1,0 +1,17 @@
+io.flutter.plugins.firebase.auth.firebase_auth-core-1.6.0-0 /home/ephraim/.gradle/caches/transforms-3/0493d78afe84919f16efe4b679302c3a/transformed/core-1.6.0/res
+io.flutter.plugins.firebase.auth.firebase_auth-jetified-window-java-1.0.0-beta04-1 /home/ephraim/.gradle/caches/transforms-3/078da900312efa2af954c0c286cc94c0/transformed/jetified-window-java-1.0.0-beta04/res
+io.flutter.plugins.firebase.auth.firebase_auth-jetified-play-services-basement-17.1.0-2 /home/ephraim/.gradle/caches/transforms-3/0ff1250390dc87c7b2c36b7f77fa7ac8/transformed/jetified-play-services-basement-17.1.0/res
+io.flutter.plugins.firebase.auth.firebase_auth-jetified-play-services-base-17.1.0-3 /home/ephraim/.gradle/caches/transforms-3/458a109acadeed04809f94701d1ebcce/transformed/jetified-play-services-base-17.1.0/res
+io.flutter.plugins.firebase.auth.firebase_auth-jetified-annotation-experimental-1.1.0-4 /home/ephraim/.gradle/caches/transforms-3/5524c459b8d5fed1e7bcc6e709d8212f/transformed/jetified-annotation-experimental-1.1.0/res
+io.flutter.plugins.firebase.auth.firebase_auth-jetified-window-1.0.0-beta04-5 /home/ephraim/.gradle/caches/transforms-3/6ed5292ad7197e8f2f57c368bbeaecd0/transformed/jetified-window-1.0.0-beta04/res
+io.flutter.plugins.firebase.auth.firebase_auth-coordinatorlayout-1.0.0-6 /home/ephraim/.gradle/caches/transforms-3/c30cf3c305cc9c0ecfc270cabac7d422/transformed/coordinatorlayout-1.0.0/res
+io.flutter.plugins.firebase.auth.firebase_auth-browser-1.0.0-7 /home/ephraim/.gradle/caches/transforms-3/e0e7cd076750a2f064a63acaf4d89580/transformed/browser-1.0.0/res
+io.flutter.plugins.firebase.auth.firebase_auth-pngs-8 /home/ephraim/Documents/mez/flutter_application/build/firebase_auth/generated/res/pngs/release
+io.flutter.plugins.firebase.auth.firebase_auth-resValues-9 /home/ephraim/Documents/mez/flutter_application/build/firebase_auth/generated/res/resValues/release
+io.flutter.plugins.firebase.auth.firebase_auth-rs-10 /home/ephraim/Documents/mez/flutter_application/build/firebase_auth/generated/res/rs/release
+io.flutter.plugins.firebase.auth.firebase_auth-mergeReleaseResources-11 /home/ephraim/Documents/mez/flutter_application/build/firebase_auth/intermediates/incremental/release/mergeReleaseResources/merged.dir
+io.flutter.plugins.firebase.auth.firebase_auth-mergeReleaseResources-12 /home/ephraim/Documents/mez/flutter_application/build/firebase_auth/intermediates/incremental/release/mergeReleaseResources/stripped.dir
+io.flutter.plugins.firebase.auth.firebase_auth-merged_res-13 /home/ephraim/Documents/mez/flutter_application/build/firebase_auth/intermediates/merged_res/release
+io.flutter.plugins.firebase.auth.firebase_auth-packaged_res-14 /home/ephraim/Documents/mez/flutter_application/build/firebase_core/intermediates/packaged_res/release
+io.flutter.plugins.firebase.auth.firebase_auth-main-15 /home/ephraim/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.org/firebase_auth-3.3.7/android/src/main/res
+io.flutter.plugins.firebase.auth.firebase_auth-release-16 /home/ephraim/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.org/firebase_auth-3.3.7/android/src/release/res

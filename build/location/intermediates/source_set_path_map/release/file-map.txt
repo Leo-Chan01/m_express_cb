@@ -1,0 +1,16 @@
+com.lyokone.location-core-1.6.0-0 /home/ephraim/.gradle/caches/transforms-3/0493d78afe84919f16efe4b679302c3a/transformed/core-1.6.0/res
+com.lyokone.location-jetified-window-java-1.0.0-beta04-1 /home/ephraim/.gradle/caches/transforms-3/078da900312efa2af954c0c286cc94c0/transformed/jetified-window-java-1.0.0-beta04/res
+com.lyokone.location-jetified-play-services-basement-16.0.1-2 /home/ephraim/.gradle/caches/transforms-3/1e85b45a9c0e9951bb6696af9fc6c5a7/transformed/jetified-play-services-basement-16.0.1/res
+com.lyokone.location-media-1.0.0-3 /home/ephraim/.gradle/caches/transforms-3/5271649e96fbbc89ccacc705c997f38d/transformed/media-1.0.0/res
+com.lyokone.location-jetified-annotation-experimental-1.1.0-4 /home/ephraim/.gradle/caches/transforms-3/5524c459b8d5fed1e7bcc6e709d8212f/transformed/jetified-annotation-experimental-1.1.0/res
+com.lyokone.location-jetified-play-services-base-16.0.1-5 /home/ephraim/.gradle/caches/transforms-3/5c23e70faf15b6bb3afb39ec2694dfc9/transformed/jetified-play-services-base-16.0.1/res
+com.lyokone.location-jetified-window-1.0.0-beta04-6 /home/ephraim/.gradle/caches/transforms-3/6ed5292ad7197e8f2f57c368bbeaecd0/transformed/jetified-window-1.0.0-beta04/res
+com.lyokone.location-coordinatorlayout-1.0.0-7 /home/ephraim/.gradle/caches/transforms-3/c30cf3c305cc9c0ecfc270cabac7d422/transformed/coordinatorlayout-1.0.0/res
+com.lyokone.location-pngs-8 /home/ephraim/Documents/mez/flutter_application/build/location/generated/res/pngs/release
+com.lyokone.location-resValues-9 /home/ephraim/Documents/mez/flutter_application/build/location/generated/res/resValues/release
+com.lyokone.location-rs-10 /home/ephraim/Documents/mez/flutter_application/build/location/generated/res/rs/release
+com.lyokone.location-mergeReleaseResources-11 /home/ephraim/Documents/mez/flutter_application/build/location/intermediates/incremental/release/mergeReleaseResources/merged.dir
+com.lyokone.location-mergeReleaseResources-12 /home/ephraim/Documents/mez/flutter_application/build/location/intermediates/incremental/release/mergeReleaseResources/stripped.dir
+com.lyokone.location-merged_res-13 /home/ephraim/Documents/mez/flutter_application/build/location/intermediates/merged_res/release
+com.lyokone.location-main-14 /home/ephraim/snap/flutter/common/flutter/.pub-cache/git/flutterlocation-91fc47700e0645fc4d4616fe8123672fa0b5e9c5/packages/location/android/src/main/res
+com.lyokone.location-release-15 /home/ephraim/snap/flutter/common/flutter/.pub-cache/git/flutterlocation-91fc47700e0645fc4d4616fe8123672fa0b5e9c5/packages/location/android/src/release/res

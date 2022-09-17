@@ -1,0 +1,46 @@
+[
+    {
+        "merged": "com.smartersvision.food_delivery_app_2.app-merged_res-19:/mipmap-mdpi_ic_launcher.png.flat",
+        "source": "com.smartersvision.food_delivery_app_2.app-main-11:/mipmap-mdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.smartersvision.food_delivery_app_2.app-merged_res-19:/mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "com.smartersvision.food_delivery_app_2.app-main-11:/mipmap-xhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.smartersvision.food_delivery_app_2.app-merged_res-19:/mipmap-hdpi_ic_notification.png.flat",
+        "source": "com.smartersvision.food_delivery_app_2.app-main-11:/mipmap-hdpi/ic_notification.png"
+    },
+    {
+        "merged": "com.smartersvision.food_delivery_app_2.app-merged_res-19:/drawable_launch_background.xml.flat",
+        "source": "com.smartersvision.food_delivery_app_2.app-main-11:/drawable/launch_background.xml"
+    },
+    {
+        "merged": "com.smartersvision.food_delivery_app_2.app-merged_res-19:/mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "com.smartersvision.food_delivery_app_2.app-main-11:/mipmap-xxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.smartersvision.food_delivery_app_2.app-merged_res-19:/mipmap-xxxhdpi_ic_notification.png.flat",
+        "source": "com.smartersvision.food_delivery_app_2.app-main-11:/mipmap-xxxhdpi/ic_notification.png"
+    },
+    {
+        "merged": "com.smartersvision.food_delivery_app_2.app-merged_res-19:/mipmap-xhdpi_ic_notification.png.flat",
+        "source": "com.smartersvision.food_delivery_app_2.app-main-11:/mipmap-xhdpi/ic_notification.png"
+    },
+    {
+        "merged": "com.smartersvision.food_delivery_app_2.app-merged_res-19:/mipmap-xxhdpi_ic_notification.png.flat",
+        "source": "com.smartersvision.food_delivery_app_2.app-main-11:/mipmap-xxhdpi/ic_notification.png"
+    },
+    {
+        "merged": "com.smartersvision.food_delivery_app_2.app-merged_res-19:/mipmap-mdpi_ic_notification.png.flat",
+        "source": "com.smartersvision.food_delivery_app_2.app-main-11:/mipmap-mdpi/ic_notification.png"
+    },
+    {
+        "merged": "com.smartersvision.food_delivery_app_2.app-merged_res-19:/mipmap-hdpi_ic_launcher.png.flat",
+        "source": "com.smartersvision.food_delivery_app_2.app-main-11:/mipmap-hdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.smartersvision.food_delivery_app_2.app-merged_res-19:/mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "com.smartersvision.food_delivery_app_2.app-main-11:/mipmap-xxxhdpi/ic_launcher.png"
+    }
+]

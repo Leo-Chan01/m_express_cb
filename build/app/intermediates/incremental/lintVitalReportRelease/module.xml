@@ -1,0 +1,25 @@
+<lint-module
+    format="1"
+    dir="/home/ephraim/Documents/mez/flutter_application/android/app"
+    name=":app"
+    type="APP"
+    maven="android:app:"
+    gradle="7.2.1"
+    buildFolder="/home/ephraim/Documents/mez/flutter_application/build/app"
+    bootClassPath="/home/ephraim/Android/Sdk/platforms/android-31/android.jar:/home/ephraim/Android/Sdk/build-tools/30.0.3/core-lambda-stubs.jar"
+    javaSourceLevel="1.8"
+    compileTarget="android-31">
+  <lintOptions
+      disable="InvalidPackage"
+      abortOnError="true"
+      absolutePaths="true"
+      checkReleaseBuilds="true"
+      explainIssues="true">
+    <severities>
+      <severity
+        id="InvalidPackage"
+        severity="IGNORE" />
+    </severities>
+  </lintOptions>
+  <variant name="release"/>
+</lint-module>

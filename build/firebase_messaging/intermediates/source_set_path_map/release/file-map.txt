@@ -1,0 +1,15 @@
+io.flutter.plugins.firebase.messaging.firebase_messaging-core-1.6.0-0 /home/ephraim/.gradle/caches/transforms-3/0493d78afe84919f16efe4b679302c3a/transformed/core-1.6.0/res
+io.flutter.plugins.firebase.messaging.firebase_messaging-jetified-window-java-1.0.0-beta04-1 /home/ephraim/.gradle/caches/transforms-3/078da900312efa2af954c0c286cc94c0/transformed/jetified-window-java-1.0.0-beta04/res
+io.flutter.plugins.firebase.messaging.firebase_messaging-jetified-play-services-basement-17.0.0-2 /home/ephraim/.gradle/caches/transforms-3/3e0607732901df24375fb7e5df43cee4/transformed/jetified-play-services-basement-17.0.0/res
+io.flutter.plugins.firebase.messaging.firebase_messaging-jetified-annotation-experimental-1.1.0-3 /home/ephraim/.gradle/caches/transforms-3/5524c459b8d5fed1e7bcc6e709d8212f/transformed/jetified-annotation-experimental-1.1.0/res
+io.flutter.plugins.firebase.messaging.firebase_messaging-jetified-window-1.0.0-beta04-4 /home/ephraim/.gradle/caches/transforms-3/6ed5292ad7197e8f2f57c368bbeaecd0/transformed/jetified-window-1.0.0-beta04/res
+io.flutter.plugins.firebase.messaging.firebase_messaging-jetified-firebase-messaging-23.0.0-5 /home/ephraim/.gradle/caches/transforms-3/a9e5ebdab3b3ee484e7f58b9fa088f41/transformed/jetified-firebase-messaging-23.0.0/res
+io.flutter.plugins.firebase.messaging.firebase_messaging-packaged_res-6 /home/ephraim/Documents/mez/flutter_application/build/firebase_core/intermediates/packaged_res/release
+io.flutter.plugins.firebase.messaging.firebase_messaging-pngs-7 /home/ephraim/Documents/mez/flutter_application/build/firebase_messaging/generated/res/pngs/release
+io.flutter.plugins.firebase.messaging.firebase_messaging-resValues-8 /home/ephraim/Documents/mez/flutter_application/build/firebase_messaging/generated/res/resValues/release
+io.flutter.plugins.firebase.messaging.firebase_messaging-rs-9 /home/ephraim/Documents/mez/flutter_application/build/firebase_messaging/generated/res/rs/release
+io.flutter.plugins.firebase.messaging.firebase_messaging-mergeReleaseResources-10 /home/ephraim/Documents/mez/flutter_application/build/firebase_messaging/intermediates/incremental/release/mergeReleaseResources/merged.dir
+io.flutter.plugins.firebase.messaging.firebase_messaging-mergeReleaseResources-11 /home/ephraim/Documents/mez/flutter_application/build/firebase_messaging/intermediates/incremental/release/mergeReleaseResources/stripped.dir
+io.flutter.plugins.firebase.messaging.firebase_messaging-merged_res-12 /home/ephraim/Documents/mez/flutter_application/build/firebase_messaging/intermediates/merged_res/release
+io.flutter.plugins.firebase.messaging.firebase_messaging-main-13 /home/ephraim/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.org/firebase_messaging-11.2.6/android/src/main/res
+io.flutter.plugins.firebase.messaging.firebase_messaging-release-14 /home/ephraim/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.org/firebase_messaging-11.2.6/android/src/release/res
