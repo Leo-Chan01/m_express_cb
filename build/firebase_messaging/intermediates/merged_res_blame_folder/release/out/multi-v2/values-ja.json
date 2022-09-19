@@ -1,10 +1,44 @@
 {
     "logs": [
         {
-            "outputFile": "io.flutter.plugins.firebase.messaging.firebase_messaging-mergeReleaseResources-9:/values-ja/values-ja.xml",
+            "outputFile": "D:\\FlutterProjects\\m_express_cb\\build\\firebase_messaging\\intermediates\\res\\merged\\release\\values-ja\\values-ja.xml",
             "map": [
                 {
-                    "source": "/home/ephraim/.gradle/caches/transforms-3/0493d78afe84919f16efe4b679302c3a/transformed/core-1.6.0/res/values-ja/values-ja.xml",
+                    "source": "C:\\Users\\Victor\\.gradle\\caches\\transforms-3\\95c26c7339860c92c6c33ae08dd6023f\\transformed\\jetified-play-services-base-18.0.1\\res\\values-ja\\values.xml",
+                    "from": {
+                        "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20",
+                        "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
+                        "startOffsets": "193,293,423,539,641,769,885,986,1081,1211,1308,1437,1552,1668,1784,1840,1895",
+                        "endColumns": "99,129,115,101,127,115,100,94,129,96,128,114,115,115,55,54,66",
+                        "endOffsets": "292,422,538,640,768,884,985,1080,1210,1307,1436,1551,1667,1783,1839,1894,1961"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,5,6,7,8,9,11,12,13,14,15,16,17,18,19",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,159,293,413,519,651,771,876,1097,1231,1332,1465,1584,1704,1824,1884,1943",
+                        "endColumns": "103,133,119,105,131,119,104,98,133,100,132,118,119,119,59,58,70",
+                        "endOffsets": "154,288,408,514,646,766,871,970,1226,1327,1460,1579,1699,1819,1879,1938,2009"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\Victor\\.gradle\\caches\\transforms-3\\9299f4109904cd9bc7a42078d2f6084a\\transformed\\jetified-play-services-basement-18.0.0\\res\\values-ja\\values.xml",
+                    "from": {
+                        "startLines": "4",
+                        "startColumns": "0",
+                        "startOffsets": "195",
+                        "endColumns": "117",
+                        "endOffsets": "312"
+                    },
+                    "to": {
+                        "startLines": "10",
+                        "startColumns": "4",
+                        "startOffsets": "975",
+                        "endColumns": "121",
+                        "endOffsets": "1092"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\Victor\\.gradle\\caches\\transforms-3\\032d87db653542bf23bb2b870b6c2916\\transformed\\core-1.6.0\\res\\values-ja\\values-ja.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -13,54 +47,54 @@
                         "endOffsets": "151"
                     },
                     "to": {
-                        "startLines": "4",
+                        "startLines": "20",
                         "startColumns": "4",
-                        "startOffsets": "358",
+                        "startOffsets": "2014",
                         "endColumns": "100",
-                        "endOffsets": "454"
-                    }
-                },
-                {
-                    "source": "/home/ephraim/.gradle/caches/transforms-3/a9e5ebdab3b3ee484e7f58b9fa088f41/transformed/jetified-firebase-messaging-23.0.0/res/values-ja/values.xml",
-                    "from": {
-                        "startLines": "4",
-                        "startColumns": "0",
-                        "startOffsets": "207",
-                        "endColumns": "67",
-                        "endOffsets": "274"
-                    },
-                    "to": {
-                        "startLines": "3",
-                        "startColumns": "4",
-                        "startOffsets": "286",
-                        "endColumns": "71",
-                        "endOffsets": "353"
-                    }
-                },
-                {
-                    "source": "/home/ephraim/.gradle/caches/transforms-3/3e0607732901df24375fb7e5df43cee4/transformed/jetified-play-services-basement-17.0.0/res/values-ja/values.xml",
-                    "from": {
-                        "startLines": "4",
-                        "startColumns": "0",
-                        "startOffsets": "247",
-                        "endColumns": "180",
-                        "endOffsets": "427"
-                    },
-                    "to": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "105",
-                        "endColumns": "180",
-                        "endOffsets": "281"
+                        "endOffsets": "2110"
                     }
                 }
             ]
         },
         {
-            "outputFile": "io.flutter.plugins.firebase.messaging.firebase_messaging-merged_res-11:/values-ja/values-ja.xml",
+            "outputFile": "D:\\FlutterProjects\\m_express_cb\\build\\firebase_messaging\\intermediates\\incremental\\mergeReleaseResources\\merged.dir\\values-ja\\values-ja.xml",
             "map": [
                 {
-                    "source": "/home/ephraim/.gradle/caches/transforms-3/0493d78afe84919f16efe4b679302c3a/transformed/core-1.6.0/res/values-ja/values-ja.xml",
+                    "source": "C:\\Users\\Victor\\.gradle\\caches\\transforms-3\\95c26c7339860c92c6c33ae08dd6023f\\transformed\\jetified-play-services-base-18.0.1\\res\\values-ja\\values.xml",
+                    "from": {
+                        "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20",
+                        "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
+                        "startOffsets": "193,293,423,539,641,769,885,986,1081,1211,1308,1437,1552,1668,1784,1840,1895",
+                        "endColumns": "99,129,115,101,127,115,100,94,129,96,128,114,115,115,55,54,66",
+                        "endOffsets": "292,422,538,640,768,884,985,1080,1210,1307,1436,1551,1667,1783,1839,1894,1961"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,5,6,7,8,9,11,12,13,14,15,16,17,18,19",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,159,293,413,519,651,771,876,1097,1231,1332,1465,1584,1704,1824,1884,1943",
+                        "endColumns": "103,133,119,105,131,119,104,98,133,100,132,118,119,119,59,58,70",
+                        "endOffsets": "154,288,408,514,646,766,871,970,1226,1327,1460,1579,1699,1819,1879,1938,2009"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\Victor\\.gradle\\caches\\transforms-3\\9299f4109904cd9bc7a42078d2f6084a\\transformed\\jetified-play-services-basement-18.0.0\\res\\values-ja\\values.xml",
+                    "from": {
+                        "startLines": "4",
+                        "startColumns": "0",
+                        "startOffsets": "195",
+                        "endColumns": "117",
+                        "endOffsets": "312"
+                    },
+                    "to": {
+                        "startLines": "10",
+                        "startColumns": "4",
+                        "startOffsets": "975",
+                        "endColumns": "121",
+                        "endOffsets": "1092"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\Victor\\.gradle\\caches\\transforms-3\\032d87db653542bf23bb2b870b6c2916\\transformed\\core-1.6.0\\res\\values-ja\\values-ja.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -69,45 +103,11 @@
                         "endOffsets": "151"
                     },
                     "to": {
-                        "startLines": "4",
+                        "startLines": "20",
                         "startColumns": "4",
-                        "startOffsets": "358",
+                        "startOffsets": "2014",
                         "endColumns": "100",
-                        "endOffsets": "454"
-                    }
-                },
-                {
-                    "source": "/home/ephraim/.gradle/caches/transforms-3/a9e5ebdab3b3ee484e7f58b9fa088f41/transformed/jetified-firebase-messaging-23.0.0/res/values-ja/values.xml",
-                    "from": {
-                        "startLines": "4",
-                        "startColumns": "0",
-                        "startOffsets": "207",
-                        "endColumns": "67",
-                        "endOffsets": "274"
-                    },
-                    "to": {
-                        "startLines": "3",
-                        "startColumns": "4",
-                        "startOffsets": "286",
-                        "endColumns": "71",
-                        "endOffsets": "353"
-                    }
-                },
-                {
-                    "source": "/home/ephraim/.gradle/caches/transforms-3/3e0607732901df24375fb7e5df43cee4/transformed/jetified-play-services-basement-17.0.0/res/values-ja/values.xml",
-                    "from": {
-                        "startLines": "4",
-                        "startColumns": "0",
-                        "startOffsets": "247",
-                        "endColumns": "180",
-                        "endOffsets": "427"
-                    },
-                    "to": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "105",
-                        "endColumns": "180",
-                        "endOffsets": "281"
+                        "endOffsets": "2110"
                     }
                 }
             ]

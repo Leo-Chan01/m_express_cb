@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.baseflow.geolocator.geolocator_android-mergeReleaseResources-8:/values-zh-rTW/values-zh-rTW.xml",
+            "outputFile": "D:\\FlutterProjects\\m_express_cb\\build\\geolocator_android\\intermediates\\incremental\\mergeReleaseResources\\merged.dir\\values-zh-rTW\\values-zh-rTW.xml",
             "map": [
                 {
-                    "source": "/home/ephraim/.gradle/caches/transforms-3/4ccde8d99a3c1e6c12f9a16da4889878/transformed/jetified-play-services-base-17.0.0/res/values-zh-rTW/values.xml",
+                    "source": "C:\\Users\\Victor\\.gradle\\caches\\transforms-3\\0ec7986a1ec4729cf9764bf19132342b\\transformed\\jetified-play-services-base-17.0.0\\res\\values-zh-rTW\\values.xml",
                     "from": {
                         "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20",
                         "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
@@ -21,7 +21,7 @@
                     }
                 },
                 {
-                    "source": "/home/ephraim/.gradle/caches/transforms-3/3e0607732901df24375fb7e5df43cee4/transformed/jetified-play-services-basement-17.0.0/res/values-zh-rTW/values.xml",
+                    "source": "C:\\Users\\Victor\\.gradle\\caches\\transforms-3\\0341db1f36da7c15038680c19782ccee\\transformed\\jetified-play-services-basement-17.0.0\\res\\values-zh-rTW\\values.xml",
                     "from": {
                         "startLines": "4",
                         "startColumns": "0",
@@ -38,7 +38,7 @@
                     }
                 },
                 {
-                    "source": "/home/ephraim/.gradle/caches/transforms-3/0493d78afe84919f16efe4b679302c3a/transformed/core-1.6.0/res/values-zh-rTW/values-zh-rTW.xml",
+                    "source": "C:\\Users\\Victor\\.gradle\\caches\\transforms-3\\032d87db653542bf23bb2b870b6c2916\\transformed\\core-1.6.0\\res\\values-zh-rTW\\values-zh-rTW.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -57,10 +57,10 @@
             ]
         },
         {
-            "outputFile": "com.baseflow.geolocator.geolocator_android-merged_res-10:/values-zh-rTW/values-zh-rTW.xml",
+            "outputFile": "D:\\FlutterProjects\\m_express_cb\\build\\geolocator_android\\intermediates\\res\\merged\\release\\values-zh-rTW\\values-zh-rTW.xml",
             "map": [
                 {
-                    "source": "/home/ephraim/.gradle/caches/transforms-3/4ccde8d99a3c1e6c12f9a16da4889878/transformed/jetified-play-services-base-17.0.0/res/values-zh-rTW/values.xml",
+                    "source": "C:\\Users\\Victor\\.gradle\\caches\\transforms-3\\0ec7986a1ec4729cf9764bf19132342b\\transformed\\jetified-play-services-base-17.0.0\\res\\values-zh-rTW\\values.xml",
                     "from": {
                         "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20",
                         "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
@@ -77,7 +77,7 @@
                     }
                 },
                 {
-                    "source": "/home/ephraim/.gradle/caches/transforms-3/3e0607732901df24375fb7e5df43cee4/transformed/jetified-play-services-basement-17.0.0/res/values-zh-rTW/values.xml",
+                    "source": "C:\\Users\\Victor\\.gradle\\caches\\transforms-3\\0341db1f36da7c15038680c19782ccee\\transformed\\jetified-play-services-basement-17.0.0\\res\\values-zh-rTW\\values.xml",
                     "from": {
                         "startLines": "4",
                         "startColumns": "0",
@@ -94,7 +94,7 @@
                     }
                 },
                 {
-                    "source": "/home/ephraim/.gradle/caches/transforms-3/0493d78afe84919f16efe4b679302c3a/transformed/core-1.6.0/res/values-zh-rTW/values-zh-rTW.xml",
+                    "source": "C:\\Users\\Victor\\.gradle\\caches\\transforms-3\\032d87db653542bf23bb2b870b6c2916\\transformed\\core-1.6.0\\res\\values-zh-rTW\\values-zh-rTW.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

@@ -1,18 +1,18 @@
 [
     {
-        "merged": "io.flutter.plugins.androidintent.android_intent-merged_res-8:/layout-v21/notification_action_tombstone.xml",
-        "source": "io.flutter.plugins.androidintent.android_intent-core-1.6.0-0:/layout-v21/notification_action_tombstone.xml"
+        "merged": "D:\\FlutterProjects\\m_express_cb\\build\\android_intent\\intermediates\\res\\merged\\release\\layout-v21\\notification_template_custom_big.xml",
+        "source": "C:\\Users\\Victor\\.gradle\\caches\\transforms-3\\032d87db653542bf23bb2b870b6c2916\\transformed\\core-1.6.0\\res\\layout-v21\\notification_template_custom_big.xml"
     },
     {
-        "merged": "io.flutter.plugins.androidintent.android_intent-merged_res-8:/layout-v21/notification_template_icon_group.xml",
-        "source": "io.flutter.plugins.androidintent.android_intent-core-1.6.0-0:/layout-v21/notification_template_icon_group.xml"
+        "merged": "D:\\FlutterProjects\\m_express_cb\\build\\android_intent\\intermediates\\res\\merged\\release\\layout-v21\\notification_template_icon_group.xml",
+        "source": "C:\\Users\\Victor\\.gradle\\caches\\transforms-3\\032d87db653542bf23bb2b870b6c2916\\transformed\\core-1.6.0\\res\\layout-v21\\notification_template_icon_group.xml"
     },
     {
-        "merged": "io.flutter.plugins.androidintent.android_intent-merged_res-8:/layout-v21/notification_action.xml",
-        "source": "io.flutter.plugins.androidintent.android_intent-core-1.6.0-0:/layout-v21/notification_action.xml"
+        "merged": "D:\\FlutterProjects\\m_express_cb\\build\\android_intent\\intermediates\\res\\merged\\release\\layout-v21\\notification_action_tombstone.xml",
+        "source": "C:\\Users\\Victor\\.gradle\\caches\\transforms-3\\032d87db653542bf23bb2b870b6c2916\\transformed\\core-1.6.0\\res\\layout-v21\\notification_action_tombstone.xml"
     },
     {
-        "merged": "io.flutter.plugins.androidintent.android_intent-merged_res-8:/layout-v21/notification_template_custom_big.xml",
-        "source": "io.flutter.plugins.androidintent.android_intent-core-1.6.0-0:/layout-v21/notification_template_custom_big.xml"
+        "merged": "D:\\FlutterProjects\\m_express_cb\\build\\android_intent\\intermediates\\res\\merged\\release\\layout-v21\\notification_action.xml",
+        "source": "C:\\Users\\Victor\\.gradle\\caches\\transforms-3\\032d87db653542bf23bb2b870b6c2916\\transformed\\core-1.6.0\\res\\layout-v21\\notification_action.xml"
     }
 ]

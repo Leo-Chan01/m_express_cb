@@ -1,26 +1,26 @@
 [
     {
-        "merged": "io.github.ponnamkarthik.toast.fluttertoast-merged_res-8:/drawable/toast_bg.xml",
-        "source": "io.github.ponnamkarthik.toast.fluttertoast-main-9:/drawable/toast_bg.xml"
+        "merged": "D:\\FlutterProjects\\m_express_cb\\build\\fluttertoast\\intermediates\\res\\merged\\release\\drawable\\toast_bg.xml",
+        "source": "C:\\Users\\Victor\\flutter\\.pub-cache\\hosted\\pub.dartlang.org\\fluttertoast-8.0.8\\android\\src\\main\\res\\drawable\\toast_bg.xml"
     },
     {
-        "merged": "io.github.ponnamkarthik.toast.fluttertoast-merged_res-8:/drawable/notification_icon_background.xml",
-        "source": "io.github.ponnamkarthik.toast.fluttertoast-core-1.6.0-0:/drawable/notification_icon_background.xml"
+        "merged": "D:\\FlutterProjects\\m_express_cb\\build\\fluttertoast\\intermediates\\res\\merged\\release\\drawable\\notification_bg_low.xml",
+        "source": "C:\\Users\\Victor\\.gradle\\caches\\transforms-3\\032d87db653542bf23bb2b870b6c2916\\transformed\\core-1.6.0\\res\\drawable\\notification_bg_low.xml"
     },
     {
-        "merged": "io.github.ponnamkarthik.toast.fluttertoast-merged_res-8:/drawable/notification_bg.xml",
-        "source": "io.github.ponnamkarthik.toast.fluttertoast-core-1.6.0-0:/drawable/notification_bg.xml"
+        "merged": "D:\\FlutterProjects\\m_express_cb\\build\\fluttertoast\\intermediates\\res\\merged\\release\\drawable\\notification_icon_background.xml",
+        "source": "C:\\Users\\Victor\\.gradle\\caches\\transforms-3\\032d87db653542bf23bb2b870b6c2916\\transformed\\core-1.6.0\\res\\drawable\\notification_icon_background.xml"
     },
     {
-        "merged": "io.github.ponnamkarthik.toast.fluttertoast-merged_res-8:/drawable/notification_bg_low.xml",
-        "source": "io.github.ponnamkarthik.toast.fluttertoast-core-1.6.0-0:/drawable/notification_bg_low.xml"
+        "merged": "D:\\FlutterProjects\\m_express_cb\\build\\fluttertoast\\intermediates\\res\\merged\\release\\drawable\\notification_tile_bg.xml",
+        "source": "C:\\Users\\Victor\\.gradle\\caches\\transforms-3\\032d87db653542bf23bb2b870b6c2916\\transformed\\core-1.6.0\\res\\drawable\\notification_tile_bg.xml"
     },
     {
-        "merged": "io.github.ponnamkarthik.toast.fluttertoast-merged_res-8:/drawable/corner.xml",
-        "source": "io.github.ponnamkarthik.toast.fluttertoast-main-9:/drawable/corner.xml"
+        "merged": "D:\\FlutterProjects\\m_express_cb\\build\\fluttertoast\\intermediates\\res\\merged\\release\\drawable\\corner.xml",
+        "source": "C:\\Users\\Victor\\flutter\\.pub-cache\\hosted\\pub.dartlang.org\\fluttertoast-8.0.8\\android\\src\\main\\res\\drawable\\corner.xml"
     },
     {
-        "merged": "io.github.ponnamkarthik.toast.fluttertoast-merged_res-8:/drawable/notification_tile_bg.xml",
-        "source": "io.github.ponnamkarthik.toast.fluttertoast-core-1.6.0-0:/drawable/notification_tile_bg.xml"
+        "merged": "D:\\FlutterProjects\\m_express_cb\\build\\fluttertoast\\intermediates\\res\\merged\\release\\drawable\\notification_bg.xml",
+        "source": "C:\\Users\\Victor\\.gradle\\caches\\transforms-3\\032d87db653542bf23bb2b870b6c2916\\transformed\\core-1.6.0\\res\\drawable\\notification_bg.xml"
     }
 ]

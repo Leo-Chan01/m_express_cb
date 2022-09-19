@@ -2,17 +2,14 @@
 2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
 3    package="com.humazed.google_map_location_picker" >
 4
-5    <uses-sdk
-6        android:minSdkVersion="16"
-6-->/home/ephraim/snap/flutter/common/flutter/.pub-cache/git/google_map_location_picker-8026249fc6e6d3f4baae876c59dae91a0aaae401/android/src/main/AndroidManifest.xml
-7        android:targetSdkVersion="16" />
-7-->/home/ephraim/snap/flutter/common/flutter/.pub-cache/git/google_map_location_picker-8026249fc6e6d3f4baae876c59dae91a0aaae401/android/src/main/AndroidManifest.xml
-8
-9    <meta-data
-9-->/home/ephraim/snap/flutter/common/flutter/.pub-cache/git/google_map_location_picker-8026249fc6e6d3f4baae876c59dae91a0aaae401/android/src/main/AndroidManifest.xml:2:5-67
-10        android:name="flutterEmbedding"
-10-->/home/ephraim/snap/flutter/common/flutter/.pub-cache/git/google_map_location_picker-8026249fc6e6d3f4baae876c59dae91a0aaae401/android/src/main/AndroidManifest.xml:2:16-47
-11        android:value="2" />
-11-->/home/ephraim/snap/flutter/common/flutter/.pub-cache/git/google_map_location_picker-8026249fc6e6d3f4baae876c59dae91a0aaae401/android/src/main/AndroidManifest.xml:2:48-65
-12
-13</manifest>
+5    <uses-sdk android:minSdkVersion="16" />
+5-->C:\Users\Victor\flutter\.pub-cache\git\google_map_location_picker-8026249fc6e6d3f4baae876c59dae91a0aaae401\android\src\main\AndroidManifest.xml
+6
+7    <meta-data
+7-->C:\Users\Victor\flutter\.pub-cache\git\google_map_location_picker-8026249fc6e6d3f4baae876c59dae91a0aaae401\android\src\main\AndroidManifest.xml:2:5-67
+8        android:name="flutterEmbedding"
+8-->C:\Users\Victor\flutter\.pub-cache\git\google_map_location_picker-8026249fc6e6d3f4baae876c59dae91a0aaae401\android\src\main\AndroidManifest.xml:2:16-47
+9        android:value="2" />
+9-->C:\Users\Victor\flutter\.pub-cache\git\google_map_location_picker-8026249fc6e6d3f4baae876c59dae91a0aaae401\android\src\main\AndroidManifest.xml:2:48-65
+10
+11</manifest>

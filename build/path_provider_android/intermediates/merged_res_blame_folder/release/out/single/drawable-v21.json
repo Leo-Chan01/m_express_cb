@@ -1,6 +1,6 @@
 [
     {
-        "merged": "io.flutter.plugins.pathprovider.path_provider_android-merged_res-8:/drawable-v21/notification_action_background.xml",
-        "source": "io.flutter.plugins.pathprovider.path_provider_android-core-1.6.0-0:/drawable-v21/notification_action_background.xml"
+        "merged": "D:\\FlutterProjects\\m_express_cb\\build\\path_provider_android\\intermediates\\res\\merged\\release\\drawable-v21\\notification_action_background.xml",
+        "source": "C:\\Users\\Victor\\.gradle\\caches\\transforms-3\\032d87db653542bf23bb2b870b6c2916\\transformed\\core-1.6.0\\res\\drawable-v21\\notification_action_background.xml"
     }
 ]

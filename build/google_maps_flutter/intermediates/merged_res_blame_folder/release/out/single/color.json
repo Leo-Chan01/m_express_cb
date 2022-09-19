@@ -1,14 +1,14 @@
 [
     {
-        "merged": "io.flutter.plugins.googlemaps.google_maps_flutter-merged_res-12:/color/common_google_signin_btn_text_dark.xml",
-        "source": "io.flutter.plugins.googlemaps.google_maps_flutter-jetified-play-services-base-17.0.0-4:/color/common_google_signin_btn_text_dark.xml"
+        "merged": "D:\\FlutterProjects\\m_express_cb\\build\\google_maps_flutter\\intermediates\\res\\merged\\release\\color\\common_google_signin_btn_text_light.xml",
+        "source": "C:\\Users\\Victor\\.gradle\\caches\\transforms-3\\0ec7986a1ec4729cf9764bf19132342b\\transformed\\jetified-play-services-base-17.0.0\\res\\color\\common_google_signin_btn_text_light.xml"
     },
     {
-        "merged": "io.flutter.plugins.googlemaps.google_maps_flutter-merged_res-12:/color/common_google_signin_btn_text_light.xml",
-        "source": "io.flutter.plugins.googlemaps.google_maps_flutter-jetified-play-services-base-17.0.0-4:/color/common_google_signin_btn_text_light.xml"
+        "merged": "D:\\FlutterProjects\\m_express_cb\\build\\google_maps_flutter\\intermediates\\res\\merged\\release\\color\\common_google_signin_btn_tint.xml",
+        "source": "C:\\Users\\Victor\\.gradle\\caches\\transforms-3\\0ec7986a1ec4729cf9764bf19132342b\\transformed\\jetified-play-services-base-17.0.0\\res\\color\\common_google_signin_btn_tint.xml"
     },
     {
-        "merged": "io.flutter.plugins.googlemaps.google_maps_flutter-merged_res-12:/color/common_google_signin_btn_tint.xml",
-        "source": "io.flutter.plugins.googlemaps.google_maps_flutter-jetified-play-services-base-17.0.0-4:/color/common_google_signin_btn_tint.xml"
+        "merged": "D:\\FlutterProjects\\m_express_cb\\build\\google_maps_flutter\\intermediates\\res\\merged\\release\\color\\common_google_signin_btn_text_dark.xml",
+        "source": "C:\\Users\\Victor\\.gradle\\caches\\transforms-3\\0ec7986a1ec4729cf9764bf19132342b\\transformed\\jetified-play-services-base-17.0.0\\res\\color\\common_google_signin_btn_text_dark.xml"
     }
 ]
