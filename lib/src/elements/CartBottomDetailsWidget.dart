@@ -93,6 +93,8 @@ class CartBottomDetailsWidget extends StatelessWidget {
                         child: MaterialButton(
                           onPressed: () {
                             _con.goCheckout(context);
+                            // cccc
+
                           },
                           disabledColor:
                               Theme.of(context).focusColor.withOpacity(0.5),

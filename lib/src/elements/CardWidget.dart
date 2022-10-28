@@ -86,23 +86,16 @@ class CardWidget extends StatelessWidget {
                     margin: EdgeInsets.symmetric(horizontal: 0, vertical: 8),
                     padding: EdgeInsets.symmetric(horizontal: 12, vertical: 3),
                     decoration: BoxDecoration(
-                        color: Helper.canDelivery(restaurant)
-                            ? Colors.green
-                            : Colors.orange,
+                        color: Colors.green,
+                            // : Colors.orange,
                         borderRadius: BorderRadius.circular(24)),
-                    child: Helper.canDelivery(restaurant)
-                        ? Text(
+                    child:  Text(
                             S.of(context).delivery,
                             style: Theme.of(context).textTheme.caption.merge(
                                 TextStyle(
                                     color: Theme.of(context).primaryColor)),
                           )
-                        : Text(
-                            S.of(context).pickup,
-                            style: Theme.of(context).textTheme.caption.merge(
-                                TextStyle(
-                                    color: Theme.of(context).primaryColor)),
-                          ),
+
                   ),
                 ],
               ),
@@ -131,6 +124,25 @@ class CardWidget extends StatelessWidget {
                         overflow: TextOverflow.fade,
                         softWrap: false,
                         style: Theme.of(context).textTheme.caption,
+                      ),
+                      SizedBox(height: 6,),
+                      Row(
+                        children: [
+                          Icon(Icons.location_on,size: 20,color:Theme.of(context).colorScheme.primary),
+                          SizedBox(width: 5,),
+                          Expanded(
+                            child: Text(
+                              Helper.skipHtml(restaurant.address),
+                              overflow: TextOverflow.fade,
+                              softWrap: false,
+                              style: Theme.of(context)
+                                  .textTheme
+                                  .caption
+                                  .copyWith(
+                                      color: Theme.of(context).colorScheme.primary),
+                            ),
+                          ),
+                        ],
                       ),
                       SizedBox(height: 5),
                       Row(

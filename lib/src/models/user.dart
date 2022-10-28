@@ -1,3 +1,7 @@
+
+
+import 'dart:developer';
+
 import '../models/media.dart';
 
 enum UserState { available, away, busy }
@@ -92,6 +96,8 @@ class User {
   }
 
   bool profileCompleted() {
+    log(verifiedPhone.toString());
+    return address != null && address != '' && phone != null && phone != '' && verifiedPhone != null ;
     return address != null && address != '' && phone != null && phone != '' && verifiedPhone != null && verifiedPhone;
   }
 }

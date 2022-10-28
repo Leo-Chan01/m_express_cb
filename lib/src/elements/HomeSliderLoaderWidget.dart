@@ -6,7 +6,7 @@ class HomeSliderLoaderWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       margin: const EdgeInsets.symmetric(vertical: 20, horizontal: 20),
-      height: 140,
+      height: 150,
       width: double.infinity,
       decoration: BoxDecoration(
         boxShadow: [

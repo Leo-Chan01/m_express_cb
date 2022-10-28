@@ -1,5 +1,6 @@
 import 'dart:async';
 
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:mvc_pattern/mvc_pattern.dart';
 
@@ -49,7 +50,7 @@ class _ChatWidgetState extends StateMVC<ChatWidget> {
   }
 
   Widget chatList() {
-    return StreamBuilder(
+    return StreamBuilder<QuerySnapshot>(
       stream: _con.chats,
       builder: (context, snapshot) {
         return snapshot.hasData
@@ -58,12 +59,12 @@ class _ChatWidgetState extends StateMVC<ChatWidget> {
                 reverse: true,
                 physics: const AlwaysScrollableScrollPhysics(),
                 padding: EdgeInsets.symmetric(vertical: 15, horizontal: 20),
-                itemCount: snapshot.data.documents.length,
+                itemCount: snapshot.data.docs.length,
                 shrinkWrap: false,
                 primary: true,
                 itemBuilder: (context, index) {
-                  print(snapshot.data.documents[index].data());
-                  Chat _chat = Chat.fromJSON(snapshot.data.documents[index].data());
+                  print(snapshot.data.docs[index].data());
+                  Chat _chat = Chat.fromJSON(snapshot.data.docs[index].data());
                   _chat.user = _con.conversation.users.firstWhere((_user) => _user.id == _chat.userId);
                   return ChatMessageListItem(
                     chat: _chat,

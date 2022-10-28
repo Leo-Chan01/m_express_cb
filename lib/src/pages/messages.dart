@@ -1,3 +1,5 @@
+import 'dart:developer';
+
 import 'package:flutter/material.dart';
 import 'package:mvc_pattern/mvc_pattern.dart';
 
@@ -47,6 +49,7 @@ class _MessagesWidgetState extends StateMVC<MessagesWidget> {
               primary: false,
               itemBuilder: (context, index) {
                 Conversation _conversation = Conversation.fromJSON(_docs[index].data());
+                log(_docs[index].data().toString());
                 return MessageItemWidget(
                   message: _conversation,
                   onDismissed: (conversation) {

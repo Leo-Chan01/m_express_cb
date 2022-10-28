@@ -1,4 +1,9 @@
+
+
+import 'dart:developer';
+
 import 'package:flutter/material.dart';
+import 'package:flutter_paystack_payment/flutter_paystack_payment.dart';
 
 import '../../generated/l10n.dart';
 import '../models/cart.dart';
@@ -17,9 +22,12 @@ class CheckoutController extends CartController {
   Payment payment;
   CreditCard creditCard = new CreditCard();
   bool loading = true;
+  GlobalKey<ScaffoldState> scaffoldKey;
+  var publicKey = 'pk_live_795408ffe3ae9d268c5fc97046f9f28f84d6c26e';
 
   CheckoutController() {
     this.scaffoldKey = new GlobalKey<ScaffoldState>();
+    plugin.initialize(publicKey: publicKey);
     listenForCreditCard();
   }
 
@@ -30,13 +38,48 @@ class CheckoutController extends CartController {
 
   @override
   void onLoadingCartDone() {
-    if (payment != null) addOrder(carts);
+    if (payment != null) {
+      if(payment.method == 'Paystack'){
+      payWithPaystack(carts);
+      }else{
+        addOrder(carts);
+      }
+
+      }else{
+      log('Order is null');
+
+    }
     super.onLoadingCartDone();
+  }
+
+
+  void payWithPaystack(List<Cart> carts) async {
+    log('PAYING WITH PAYSTACK');
+    Order _order = new Order();
+    // log(_order.orderStatus.status);
+    _order.foodOrders = <FoodOrder>[];
+    _order.tax = carts[0].food.restaurant.defaultTax;
+    _order.deliveryFee = payment.method == 'Pay on Pickup' ? 0 : carts[0].food.restaurant.deliveryFee;
+    OrderStatus _orderStatus = new OrderStatus();
+    _orderStatus.id = '1'; // TODO default order status Id
+    _order.orderStatus = _orderStatus;
+    _order.deliveryAddress = settingRepo.deliveryAddress.value;
+    carts.forEach((_cart) {
+      FoodOrder _foodOrder = new FoodOrder();
+      _foodOrder.quantity = _cart.quantity;
+      _foodOrder.price = _cart.food.price;
+      _foodOrder.food = _cart.food;
+      _foodOrder.extras = _cart.extras;
+      _order.foodOrders.add(_foodOrder);
+    });
+    chargeCard(scaffoldKey.currentContext,total.round(),_order);
+
   }
 
   void addOrder(List<Cart> carts) async {
     Order _order = new Order();
-    _order.foodOrders = new List<FoodOrder>();
+        log(carts.length.toString());
+    _order.foodOrders = <FoodOrder>[];
     _order.tax = carts[0].food.restaurant.defaultTax;
     _order.deliveryFee = payment.method == 'Pay on Pickup' ? 0 : carts[0].food.restaurant.deliveryFee;
     OrderStatus _orderStatus = new OrderStatus();
@@ -70,5 +113,59 @@ class CheckoutController extends CartController {
         content: Text(S.of(state.context).payment_card_updated_successfully),
       ));
     });
+  }
+
+  chargeCard(BuildContext context,int amount,Order order) async {
+    Charge charge = Charge();
+    // charge.card = _getCardFromUI();
+    charge
+      ..amount = amount*100
+      ..email = 'user@email.com'
+      ..reference = DateTime.now().toString()
+      ..putCustomField('Charged From', 'Flutter PLUGIN');
+      
+
+    if(plugin.sdkInitialized){
+
+      final response = plugin.checkout(context, charge: charge,method: CheckoutMethod.card,);
+
+
+      response.then((value) {
+
+        if(value.status){
+
+
+          this.payment.status = '3';
+          log('PAYMENTSTATUS :${ payment.status}');
+
+          orderRepo.addOrder(order, this.payment).then((value) async {
+            settingRepo.coupon = new Coupon.fromJSON({});
+            return value;
+          }).then((value) {
+            if (value is Order) {
+              setState(() {
+                loading = false;
+              });
+            }
+          });
+        }else{
+
+          log(value.status.toString());
+          Navigator.pop(scaffoldKey.currentContext);
+
+        }
+
+      }).onError((error, stackTrace) {
+        log('PAYSTACK EROR :${error.toString()}');
+
+        Navigator.pop(scaffoldKey.currentContext);
+      });
+
+    }else{
+      log('NOT INITIALIZED');
+    }
+
+    // final response = await plugin.chargeCard(context, charge: charge);
+    // Use the response
   }
 }

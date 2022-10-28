@@ -1,7 +1,8 @@
-
+import 'package:auto_size_text/auto_size_text.dart';
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 import '../helpers/app_config.dart' as config;
 import '../helpers/helper.dart';
@@ -52,7 +53,7 @@ class _HomeSliderWidgetState extends State<HomeSliderWidget> {
                       return Container(
                         margin: const EdgeInsets.symmetric(
                             vertical: 20, horizontal: 20),
-                        height: 140,
+                        height: 180,
                         decoration: BoxDecoration(
                           boxShadow: [
                             BoxShadow(
@@ -69,7 +70,7 @@ class _HomeSliderWidgetState extends State<HomeSliderWidget> {
                               borderRadius:
                                   BorderRadius.all(Radius.circular(10)),
                               child: CachedNetworkImage(
-                                height: 140,
+                                height: 150,
                                 width: double.infinity,
                                 fit: Helper.getBoxFit(slide.imageFit),
                                 imageUrl: slide.image.url,
@@ -98,59 +99,68 @@ class _HomeSliderWidgetState extends State<HomeSliderWidget> {
                                   mainAxisAlignment: MainAxisAlignment.center,
                                   children: <Widget>[
                                     if (slide.text != null && slide.text != '')
-                                      Text(
-                                        slide.text,
-                                        style: Theme.of(context)
-                                            .textTheme
-                                            .headline6
-                                            .merge(
-                                              TextStyle(
-                                                fontSize: 14,
-                                                height: 1,
-                                                color: Helper.of(context)
-                                                    .getColorFromHex(
-                                                        slide.textColor),
-                                              ),
-                                            ),
-                                        textAlign: TextAlign.center,
-                                        overflow: TextOverflow.fade,
-                                        maxLines: 3,
-                                      ),
-                                    if (slide.button != null &&
-                                        slide.button != '')
-                                      MaterialButton(
-      elevation: 0,
-      focusElevation: 0,
-      highlightElevation: 0,
-                                        onPressed: () {
-                                          if (slide.restaurant != null) {
-                                            Navigator.of(context).pushNamed(
-                                                '/Details',
-                                                arguments: RouteArgument(
-                                                    id: '0',
-                                                    param: slide.restaurant.id,
-                                                    heroTag: 'home_slide'));
-                                          } else if (slide.food != null) {
-                                            Navigator.of(context).pushNamed(
-                                                '/Food',
-                                                arguments: RouteArgument(
-                                                    id: slide.food.id,
-                                                    heroTag: 'home_slide'));
-                                          }
-                                        },
-                                        padding:
-                                            EdgeInsets.symmetric(vertical: 5),
-                                        color: Helper.of(context)
-                                            .getColorFromHex(slide.buttonColor),
-                                        shape: StadiumBorder(),
-                                        child: Text(
-                                          slide.button,
-                                          textAlign: TextAlign.start,
-                                          style: TextStyle(
-                                              color: Theme.of(context)
-                                                  .primaryColor),
+                                      // Text(
+                                      //   slide.text,
+                                      //   style: Theme.of(context)
+                                      //       .textTheme
+                                      //       .headline6
+                                      //       .merge(
+                                      //         TextStyle(
+                                      //           fontSize: 14,
+                                      //           height: 1,
+                                      //           color: Helper.of(context)
+                                      //               .getColorFromHex(
+                                      //                   slide.textColor),
+                                      //         ),
+                                      //       ),
+                                      //   textAlign: TextAlign.center,
+                                      //   overflow: TextOverflow.fade,
+                                      //   maxLines: 3,
+                                      // ),
+                                      if (slide.button != null &&
+                                          slide.button != '')
+                                        MaterialButton(
+                                          elevation: 0,
+                                          focusElevation: 0,
+                                          highlightElevation: 0,
+                                          onPressed: () {
+
+                                            // var url = Uri(host:'wa.me',path: '/${slide.text}' ,scheme: 'http');
+
+                                            var addUri = Uri.parse(
+                                                'http://wa.me/${slide.text}?text=${Uri.parse('Hello i was referred by Mez Express')}', );
+                                            launchUrl(addUri,mode:LaunchMode.externalApplication );
+                                            // launchUrl();
+                                            // if (slide.restaurant != null) {
+                                            //   Navigator.of(context).pushNamed(
+                                            //       '/Details',
+                                            //       arguments: RouteArgument(
+                                            //           id: '0',
+                                            //           param: slide.restaurant.id,
+                                            //           heroTag: 'home_slide'));
+                                            // } else if (slide.food != null) {
+                                            //   Navigator.of(context).pushNamed(
+                                            //       '/Food',
+                                            //       arguments: RouteArgument(
+                                            //           id: slide.food.id,
+                                            //           heroTag: 'home_slide'));
+                                            // }
+                                          },
+                                          padding:
+                                              EdgeInsets.symmetric(vertical: 5),
+                                          color: Helper.of(context)
+                                              .getColorFromHex(
+                                                  slide.buttonColor),
+                                          shape: StadiumBorder(),
+                                          child: AutoSizeText(
+                                            slide.button,
+                                            maxLines: 1,
+                                            textAlign: TextAlign.start,
+                                            style: TextStyle(
+                                                color: Theme.of(context)
+                                                    .primaryColor),
+                                          ),
                                         ),
-                                      ),
                                   ],
                                 ),
                               ),

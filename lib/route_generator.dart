@@ -80,6 +80,8 @@ class RouteGenerator {
         return MaterialPageRoute(builder: (_) => CheckoutWidget());
       case '/CashOnDelivery':
         return MaterialPageRoute(builder: (_) => OrderSuccessWidget(routeArgument: RouteArgument(param: 'Cash on Delivery')));
+      case '/Paystack':
+        return MaterialPageRoute(builder: (_) => OrderSuccessWidget(routeArgument: RouteArgument(param: 'Paystack')));
       case '/PayOnPickup':
         return MaterialPageRoute(builder: (_) => OrderSuccessWidget(routeArgument: RouteArgument(param: 'Pay on Pickup')));
       case '/PayPal':

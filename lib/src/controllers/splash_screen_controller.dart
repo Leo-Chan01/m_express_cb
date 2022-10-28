@@ -52,6 +52,7 @@ class SplashScreenController extends ControllerMVC {
       notificationOnResume;
       notificationOnLaunch;
       notificationOnMessage;
+
       // _firebaseMessaging.configure(
       //   onMessage: notificationOnMessage,
       //   onLaunch: notificationOnLaunch,

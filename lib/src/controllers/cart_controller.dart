@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_paystack_payment/flutter_paystack_payment.dart';
 import 'package:mvc_pattern/mvc_pattern.dart';
 
 import '../../generated/l10n.dart';
@@ -18,6 +19,9 @@ class CartController extends ControllerMVC {
   double subTotal = 0.0;
   double total = 0.0;
   GlobalKey<ScaffoldState> scaffoldKey;
+  var publicKey = 'pk_test_2442c1c75c79a8cbd1fdd8cba558a68ea1dd8524';
+  //
+  final plugin = PaystackPayment();
 
   CartController() {
     this.scaffoldKey = new GlobalKey<ScaffoldState>();

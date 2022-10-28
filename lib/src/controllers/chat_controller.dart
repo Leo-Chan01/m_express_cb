@@ -77,7 +77,7 @@ class ChatController extends ControllerMVC {
 
 
   orderSnapshotByTime(AsyncSnapshot snapshot) {
-    final docs = snapshot.data.documents;
+    final docs = snapshot.data.docs;
     docs.sort((QueryDocumentSnapshot a, QueryDocumentSnapshot b) {
       var time1 = a.get('time');
       var time2 = b.get('time');

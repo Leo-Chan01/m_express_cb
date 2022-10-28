@@ -6,10 +6,12 @@ import 'dart:ui' as ui;
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_html/flutter_html.dart';
+
 import 'package:fluttertoast/fluttertoast.dart';
 import 'package:global_configuration/global_configuration.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 import 'package:html/parser.dart';
+
 
 import '../../generated/l10n.dart';
 import '../elements/CircularLoadingWidget.dart';
@@ -62,7 +64,7 @@ class Helper {
 
   static Future<Marker> getMarker(Map<String, dynamic> res) async {
     final Uint8List markerIcon =
-        await getBytesFromAsset('assets/img/marker.png', 120);
+    await getBytesFromAsset('assets/img/marker.png', 120);
     final Marker marker = Marker(
         markerId: MarkerId(res['id']),
         icon: BitmapDescriptor.fromBytes(markerIcon),
@@ -83,10 +85,10 @@ class Helper {
     return marker;
   }
 
-  static Future<Marker> getMyPositionMarker(
-      double latitude, double longitude) async {
+  static Future<Marker> getMyPositionMarker(double latitude,
+      double longitude) async {
     final Uint8List markerIcon =
-        await getBytesFromAsset('assets/img/my_marker.png', 120);
+    await getBytesFromAsset('assets/img/my_marker.png', 120);
     final Marker marker = Marker(
         markerId: MarkerId(Random().nextInt(100).toString()),
         icon: BitmapDescriptor.fromBytes(markerIcon),
@@ -106,8 +108,8 @@ class Helper {
     }
     list.addAll(
         List.generate(5 - rate.floor() - (rate - rate.floor()).ceil(), (index) {
-      return Icon(Icons.star_border, size: size, color: Color(0xFFFFB24D));
-    }));
+          return Icon(Icons.star_border, size: size, color: Color(0xFFFFB24D));
+        }));
     return list;
   }
 
@@ -119,61 +121,80 @@ class Helper {
     try {
       if (myPrice == 0) {
         return Text(zeroPlaceholder,
-            style: style ?? Theme.of(context).textTheme.subtitle1);
+            style: style ?? Theme
+                .of(context)
+                .textTheme
+                .subtitle1);
       }
       return RichText(
         softWrap: false,
         overflow: TextOverflow.fade,
         maxLines: 1,
         text: setting.value?.currencyRight != null &&
-                setting.value?.currencyRight == false
+            setting.value?.currencyRight == false
             ? TextSpan(
-                text: setting.value?.defaultCurrency,
-                style: style == null
-                    ? Theme.of(context).textTheme.subtitle1.merge(
-                          TextStyle(
-                              fontWeight: FontWeight.w400,
-                              fontSize: Theme.of(context)
-                                      .textTheme
-                                      .subtitle1
-                                      .fontSize -
-                                  6),
-                        )
-                    : style.merge(TextStyle(
-                        fontWeight: FontWeight.w400,
-                        fontSize: style.fontSize - 6)),
-                children: <TextSpan>[
-                  TextSpan(
-                      text: myPrice.toStringAsFixed(
-                              setting.value?.currencyDecimalDigits) ??
-                          '',
-                      style: style ?? Theme.of(context).textTheme.subtitle1),
-                ],
-              )
-            : TextSpan(
+          text: setting.value?.defaultCurrency,
+          style: style == null
+              ? Theme
+              .of(context)
+              .textTheme
+              .subtitle1
+              .merge(
+            TextStyle(
+                fontWeight: FontWeight.w400,
+                fontSize: Theme
+                    .of(context)
+                    .textTheme
+                    .subtitle1
+                    .fontSize -
+                    6),
+          )
+              : style.merge(TextStyle(
+              fontWeight: FontWeight.w400,
+              fontSize: style.fontSize - 6)),
+          children: <TextSpan>[
+            TextSpan(
                 text: myPrice.toStringAsFixed(
-                        setting.value?.currencyDecimalDigits) ??
+                    setting.value?.currencyDecimalDigits) ??
                     '',
-                style: style ?? Theme.of(context).textTheme.subtitle1,
-                children: <TextSpan>[
-                  TextSpan(
-                    text: setting.value?.defaultCurrency,
-                    style: style == null
-                        ? Theme.of(context).textTheme.subtitle1.merge(
-                              TextStyle(
-                                  fontWeight: FontWeight.w400,
-                                  fontSize: Theme.of(context)
-                                          .textTheme
-                                          .subtitle1
-                                          .fontSize -
-                                      6),
-                            )
-                        : style.merge(TextStyle(
-                            fontWeight: FontWeight.w400,
-                            fontSize: style.fontSize - 6)),
-                  ),
-                ],
-              ),
+                style: style ?? Theme
+                    .of(context)
+                    .textTheme
+                    .subtitle1),
+          ],
+        )
+            : TextSpan(
+          text: myPrice.toStringAsFixed(
+              setting.value?.currencyDecimalDigits) ??
+              '',
+          style: style ?? Theme
+              .of(context)
+              .textTheme
+              .subtitle1,
+          children: <TextSpan>[
+            TextSpan(
+              text: setting.value?.defaultCurrency,
+              style: style == null
+                  ? Theme
+                  .of(context)
+                  .textTheme
+                  .subtitle1
+                  .merge(
+                TextStyle(
+                    fontWeight: FontWeight.w400,
+                    fontSize: Theme
+                        .of(context)
+                        .textTheme
+                        .subtitle1
+                        .fontSize -
+                        6),
+              )
+                  : style.merge(TextStyle(
+                  fontWeight: FontWeight.w400,
+                  fontSize: style.fontSize - 6)),
+            ),
+          ],
+        ),
       );
     } catch (e) {
       return Text('');
@@ -237,10 +258,10 @@ class Helper {
     }
     if (_distance == 0 && !deliveryAddress.value.isUnknown()) {
       _distance = sqrt(pow(
-              69.1 *
-                  (double.parse(_restaurant.latitude) -
-                      deliveryAddress.value.latitude),
-              2) +
+          69.1 *
+              (double.parse(_restaurant.latitude) -
+                  deliveryAddress.value.latitude),
+          2) +
           pow(
               69.1 *
                   (deliveryAddress.value.longitude -
@@ -268,40 +289,45 @@ class Helper {
     return Html(
       data: html ?? '',
       style: {
-        "*": Style(
-          padding: EdgeInsets.all(0),
-          margin: EdgeInsets.all(0),
-          color: Theme.of(context).hintColor,
-          fontSize: FontSize(16.0),
-          display: Display.INLINE_BLOCK,
-          width: config.App(context).appWidth(100),
-        ),
-        "h4,h5,h6": Style(
-          fontSize: FontSize(18.0),
-        ),
-        "h1,h2,h3": Style(
-          fontSize: FontSize.xLarge,
-        ),
-        "br": Style(
-          height: 0,
-        ),
-        "p": Style(
-          fontSize: FontSize(16.0),
-        )
-      },
+    "*": Style(
+    padding: EdgeInsets.all(0),
+    margin: Margins.all(0),
+    color: Theme.of(context).hintColor,
+    fontSize: FontSize(16.0),
+    display: Display.inlineBlock,
+    width:   Width(config.App(context).appWidth(100)),
+    ),
+    "h4,h5,h6": Style(
+    fontSize: FontSize(18.0),
+    ),
+    "h1,h2,h3": Style(
+    fontSize: FontSize.xLarge,
+    ),
+    "br": Style(
+    height:Height(0),
+    ),
+    "p": Style(
+    fontSize: FontSize(16.0),
+    )
+    },
     );
   }
 
   static OverlayEntry overlayLoader(context) {
     OverlayEntry loader = OverlayEntry(builder: (context) {
-      final size = MediaQuery.of(context).size;
+      final size = MediaQuery
+          .of(context)
+          .size;
       return Positioned(
         height: size.height,
         width: size.width,
         top: 0,
         left: 0,
         child: Material(
-          color: Theme.of(context).primaryColor.withOpacity(0.85),
+          color: Theme
+              .of(context)
+              .primaryColor
+              .withOpacity(0.85),
           child: CircularLoadingWidget(height: 200),
         ),
       );
@@ -335,15 +361,25 @@ class Helper {
   }
 
   static Uri getUri(String path) {
-    String _path = Uri.parse(GlobalConfiguration().getValue('base_url')).path;
+    String _path = Uri
+        .parse(GlobalConfiguration().getValue('base_url'))
+        .path;
     if (!_path.endsWith('/')) {
       _path += '/';
     }
     Uri uri = Uri(
-        scheme: Uri.parse(GlobalConfiguration().getValue('base_url')).scheme,
-        host: Uri.parse(GlobalConfiguration().getValue('base_url')).host,
-        port: Uri.parse(GlobalConfiguration().getValue('base_url')).port,
+        scheme: Uri
+            .parse(GlobalConfiguration().getValue('base_url'))
+            .scheme,
+        host: Uri
+            .parse(GlobalConfiguration().getValue('base_url'))
+            .host,
+        port: Uri
+            .parse(GlobalConfiguration().getValue('base_url'))
+            .port,
         path: _path + path);
+
+
     return uri;
   }
 
@@ -407,7 +443,9 @@ class Helper {
     if (currentBackPressTime == null ||
         now.difference(currentBackPressTime) > Duration(seconds: 2)) {
       currentBackPressTime = now;
-      Fluttertoast.showToast(msg: S.of(context).tapAgainToLeave);
+      Fluttertoast.showToast(msg: S
+          .of(context)
+          .tapAgainToLeave);
       return Future.value(false);
     }
     SystemChannels.platform.invokeMethod('SystemNavigator.pop');
@@ -417,13 +455,21 @@ class Helper {
   String trans(String text) {
     switch (text) {
       case "App\\Notifications\\StatusChangedOrder":
-        return S.of(context).order_status_changed;
+        return S
+            .of(context)
+            .order_status_changed;
       case "App\\Notifications\\NewOrder":
-        return S.of(context).new_order_from_client;
+        return S
+            .of(context)
+            .new_order_from_client;
       case "km":
-        return S.of(context).km;
+        return S
+            .of(context)
+            .km;
       case "mi":
-        return S.of(context).mi;
+        return S
+            .of(context)
+            .mi;
       default:
         return "";
     }

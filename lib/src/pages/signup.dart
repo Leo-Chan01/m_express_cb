@@ -162,6 +162,7 @@ class _SignUpWidgetState extends StateMVC<SignUpWidget> {
                             _con.loginFormKey.currentState.save();
                             var bottomSheetController = _con.scaffoldKey.currentState.showBottomSheet(
                                   (context) => MobileVerificationBottomSheetWidget(scaffoldKey: _con.scaffoldKey, user: _con.user),
+                              enableDrag: false,
                               shape: RoundedRectangleBorder(
                                 borderRadius: new BorderRadius.only(topLeft: Radius.circular(10), topRight: Radius.circular(10)),
                               ),

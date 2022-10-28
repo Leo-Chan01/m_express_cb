@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-
 import '../models/payment_method.dart';
 
 // ignore: must_be_immutable

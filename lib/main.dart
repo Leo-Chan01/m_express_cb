@@ -93,7 +93,7 @@ class _MyAppState extends State<MyApp> {
                         bodyText2: TextStyle(fontSize: 12.0, color: config.Colors().secondDarkColor(1), height: 1.35),
                         bodyText1: TextStyle(fontSize: 14.0, color: config.Colors().secondDarkColor(1), height: 1.35),
                         caption: TextStyle(fontSize: 12.0, color: config.Colors().secondDarkColor(0.6), height: 1.35),
-                      ), colorScheme: ColorScheme.fromSwatch().copyWith(secondary: config.Colors().mainDarkColor(1)),
+                      ), colorScheme: ColorScheme.fromSwatch().copyWith(secondary: config.Colors().mainDarkColor(1),brightness: Brightness.dark),
                     ));
         });
   }

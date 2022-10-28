@@ -43,7 +43,7 @@ class SplashScreenState extends StateMVC<SplashScreen> {
       key: _con.scaffoldKey,
       body: Container(
         decoration: BoxDecoration(
-          color: Theme.of(context).scaffoldBackgroundColor,
+          color: Colors.white,
         ),
         child: Center(
           child: Column(
@@ -52,7 +52,7 @@ class SplashScreenState extends StateMVC<SplashScreen> {
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
               Image.asset(
-                'assets/img/logo.png',
+                'assets/img/mezexpress_icon.png',
                 width: 150,
                 fit: BoxFit.cover,
               ),

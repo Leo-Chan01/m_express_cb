@@ -1,1 +1,1 @@
-com.smartersvision.food_delivery_app_2
+com.mez.mez_express

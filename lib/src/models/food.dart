@@ -43,7 +43,7 @@ class Food {
       weight = jsonMap['weight'] != null ? jsonMap['weight'].toString() : '';
       unit = jsonMap['unit'] != null ? jsonMap['unit'].toString() : '';
       packageItemsCount = jsonMap['package_items_count'].toString();
-      featured = jsonMap['featured'] ?? false;
+      featured = jsonMap['featured'] ?? true;
       deliverable = jsonMap['deliverable'] ?? false;
       restaurant = jsonMap['restaurant'] != null ? Restaurant.fromJSON(jsonMap['restaurant']) : Restaurant.fromJSON({});
       category = jsonMap['category'] != null ? Category.fromJSON(jsonMap['category']) : Category.fromJSON({});

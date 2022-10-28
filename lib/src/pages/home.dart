@@ -4,7 +4,6 @@ import 'package:mvc_pattern/mvc_pattern.dart';
 import '../../generated/l10n.dart';
 import '../controllers/home_controller.dart';
 import '../elements/CardsCarouselWidget.dart';
-import '../elements/CaregoriesCarouselWidget.dart';
 import '../elements/DeliveryAddressBottomSheetWidget.dart';
 import '../elements/FoodsCarouselWidget.dart';
 import '../elements/GridWidget.dart';
@@ -201,6 +200,7 @@ class _HomeWidgetState extends StateMVC<HomeWidget> {
                     ),
                   );
                 case 'top_restaurants':
+
                   return CardsCarouselWidget(
                       restaurantsList: _con.topRestaurants,
                       heroTag: 'home_top_restaurants');
@@ -226,26 +226,26 @@ class _HomeWidgetState extends StateMVC<HomeWidget> {
                   return FoodsCarouselWidget(
                       foodsList: _con.trendingFoods,
                       heroTag: 'home_food_carousel');
-                case 'categories_heading':
-                  return Padding(
-                    padding: const EdgeInsets.symmetric(horizontal: 20),
-                    child: ListTile(
-                      dense: true,
-                      contentPadding: EdgeInsets.symmetric(vertical: 0),
-                      leading: Icon(
-                        Icons.category,
-                        color: Theme.of(context).hintColor,
-                      ),
-                      title: Text(
-                        S.of(context).food_categories,
-                        style: Theme.of(context).textTheme.headline4,
-                      ),
-                    ),
-                  );
-                case 'categories':
-                  return CategoriesCarouselWidget(
-                    categories: _con.categories,
-                  );
+                // case 'categories_heading':
+                //   return Padding(
+                //     padding: const EdgeInsets.symmetric(horizontal: 20),
+                //     child: ListTile(
+                //       dense: true,
+                //       contentPadding: EdgeInsets.symmetric(vertical: 0),
+                //       leading: Icon(
+                //         Icons.category,
+                //         color: Theme.of(context).hintColor,
+                //       ),
+                //       title: Text(
+                //         S.of(context).food_categories,
+                //         style: Theme.of(context).textTheme.headline4,
+                //       ),
+                //     ),
+                //   );
+                // case 'categories':
+                //   return CategoriesCarouselWidget(
+                //     categories: _con.categories,
+                //   );
                 case 'popular_heading':
                   return Padding(
                     padding:
@@ -266,6 +266,7 @@ class _HomeWidgetState extends StateMVC<HomeWidget> {
                 case 'popular':
                   return Padding(
                     padding: const EdgeInsets.symmetric(horizontal: 20),
+                    // child: SizedBox(),
                     child: GridWidget(
                       restaurantsList: _con.popularRestaurants,
                       heroTag: 'home_restaurants',

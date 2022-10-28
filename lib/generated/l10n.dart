@@ -70,6 +70,16 @@ class S {
     );
   }
 
+  /// `Flutterwave
+  String get paystack {
+    return Intl.message(
+      'Paystack',
+      name: 'paystack',
+      desc: '',
+      args: [],
+    );
+  }
+
   /// `Ordered by Nearby first`
   String get ordered_by_nearby_first {
     return Intl.message(
@@ -2055,6 +2065,15 @@ class S {
     return Intl.message(
       'Click to pay with your PayPal account',
       name: 'click_to_pay_with_your_paypal_account',
+      desc: '',
+      args: [],
+    );
+  }
+  /// `Click to pay with your Card on Paystack`
+  String get click_to_pay_with_your_card_on_paystack {
+    return Intl.message(
+      'Click to pay with your Card On Paystack',
+      name: 'click_to_pay_with_your_card_on_paystack',
       desc: '',
       args: [],
     );

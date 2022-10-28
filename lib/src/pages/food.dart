@@ -154,16 +154,13 @@ class _FoodWidgetState extends StateMVC<FoodWidget> {
                                       padding: EdgeInsets.symmetric(
                                           horizontal: 12, vertical: 3),
                                       decoration: BoxDecoration(
-                                          color: Helper.canDelivery(
-                                                      _con.food.restaurant) &&
+                                          color:
                                                   _con.food.deliverable
                                               ? Colors.green
                                               : Colors.orange,
                                           borderRadius:
                                               BorderRadius.circular(24)),
-                                      child: Helper.canDelivery(
-                                                  _con.food.restaurant) &&
-                                              _con.food.deliverable
+                                      child: _con.food.deliverable
                                           ? Text(
                                               S.of(context).deliverable,
                                               style: Theme.of(context)

@@ -1,6 +1,6 @@
+import 'dart:developer';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
-
 import '../../generated/l10n.dart';
 import '../helpers/app_config.dart' as config;
 import '../models/user.dart' as userModel;
@@ -33,17 +33,32 @@ class _MobileVerificationBottomSheetWidgetState extends State<MobileVerification
     final PhoneCodeAutoRetrievalTimeout autoRetrieve = (String verId) {};
     final PhoneCodeSent smsCodeSent = (String verId, [int forceCodeResent]) {
       currentUser.value.verificationId = verId;
+      // ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text('SENT'),));
+
+      log('CODE SENT');
     };
     final PhoneVerificationCompleted _verifiedSuccess = (AuthCredential auth) {};
-    final PhoneVerificationFailed _verifyFailed = (FirebaseAuthException e) {};
-    await FirebaseAuth.instance.verifyPhoneNumber(
-      phoneNumber: widget.user.phone,
-      timeout: const Duration(seconds: 5),
-      verificationCompleted: _verifiedSuccess,
-      verificationFailed: _verifyFailed,
-      codeSent: smsCodeSent,
-      codeAutoRetrievalTimeout: autoRetrieve,
-    );
+    final PhoneVerificationFailed _verifyFailed = (FirebaseAuthException e) {
+      // ScaffoldMessenger.of(context).showSnackBar(
+      //   SnackBar(content: Text('${e.stackTrace.toString()} ${e.code.toString()}'),));
+      log(e.code);
+    };
+    try {
+      await FirebaseAuth.instance.verifyPhoneNumber(
+        phoneNumber: widget.user.phone,
+        timeout: const Duration(seconds: 20),
+        verificationCompleted: _verifiedSuccess,
+        verificationFailed: _verifyFailed,
+        codeSent: smsCodeSent,
+        codeAutoRetrievalTimeout: autoRetrieve,
+      
+      
+      );
+    } on Exception catch (e) {
+
+      // ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text(e.toString()),));
+
+    }
   }
 
   @override

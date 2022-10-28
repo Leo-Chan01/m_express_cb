@@ -43,7 +43,7 @@ class Restaurant {
       latitude = jsonMap['latitude'];
       longitude = jsonMap['longitude'];
       closed = jsonMap['closed'] ?? false;
-      availableForDelivery = jsonMap['available_for_delivery'] ?? false;
+      availableForDelivery = jsonMap['available_for_delivery'] ?? true;
       distance = jsonMap['distance'] != null ? double.parse(jsonMap['distance'].toString()) : 0.0;
       users = jsonMap['users'] != null && (jsonMap['users'] as List).length > 0
           ? List.from(jsonMap['users']).map((element) => User.fromJSON(element)).toSet().toList()
